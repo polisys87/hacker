@@ -1,0 +1,21 @@
+<%= render "layouts/admin_header" %>
+
+  <div class="container-fluid">
+      <div class="row">
+        <%= render "layouts/admin_left_panel" %>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h2 class="sub-header">Add News<span style="float:right;"><a href="<%= admin_news_index_path %>" class="btn btn-primary" role="button">Back</a></span></h2>
+          <div class="table-responsive">
+            <%= render 'form' %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<%= render "layouts/admin_footer" %>
+
+
+
+
+
+

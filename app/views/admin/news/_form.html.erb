@@ -1,0 +1,31 @@
+<%= form_for(@admin_news) do |f| %>
+  <% if @admin_news.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@admin_news.errors.count, "error") %> prohibited this admin_news from being saved:</h2>
+
+      <ul>
+      <% @admin_news.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :title %><br />
+    <%= f.text_field :title, :class => "form-control", :placeholder => "Enter Title" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :link %><br />
+    <%= f.text_field :link, :class => "form-control", :placeholder => "Enter Link" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :description %><br />
+    <%= f.text_area :description, :class => "form-control", :placeholder => "Enter Description", :rows => 5 %>
+  </div>
+  <div class="form-group">
+    <%= f.label :published %><br />
+    <%= f.check_box :published %>
+  </div>
+    <button name="commit" type="submit" class="btn btn-sm btn-primary">Save</button>
+<% end %>

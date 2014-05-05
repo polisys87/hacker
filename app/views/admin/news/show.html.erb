@@ -1,0 +1,41 @@
+
+
+
+<%= link_to 'Edit', edit_admin_news_path(@admin_news) %> |
+<%= link_to 'Back', admin_news_index_path %>
+
+
+<%= render "layouts/admin_header" %>
+
+  <div class="container-fluid">
+      <div class="row">
+        <%= render "layouts/admin_left_panel" %>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h2 class="sub-header">News Details<span style="float:right;"><a href="<%= edit_admin_news_path(@admin_news) %>" class="btn btn-primary" role="button">Edit</a> <a href="<%= admin_news_index_path %>" class="btn btn-primary" role="button">Back</a></span></h2>
+          <div class="table-responsive">
+            <p id="notice"><%= notice %></p>
+            <p>
+              <b>Title:</b>
+              <%= @admin_news.title %>
+            </p>
+
+            <p>
+              <b>Link:</b>
+              <%= @admin_news.link %>
+            </p>
+
+            <p>
+              <b>Description:</b>
+              <%= @admin_news.description %>
+            </p>
+
+            <p>
+              <b>Published:</b>
+              <%= @admin_news.published %>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<%= render "layouts/admin_footer" %>
