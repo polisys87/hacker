@@ -1,13 +1,9 @@
 <%= form_for(@admin_news) do |f| %>
   <% if @admin_news.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@admin_news.errors.count, "error") %> prohibited this admin_news from being saved:</h2>
-
-      <ul>
+    <div class="alert alert-danger">
       <% @admin_news.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
+        <%= msg %><br>
       <% end %>
-      </ul>
     </div>
   <% end %>
 
