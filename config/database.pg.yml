@@ -1,8 +1,8 @@
 development: &development
   adapter: postgresql
   database: crm_news_development
-  username: user_crm_news
-  password: password_crm_news
+  username:
+  password:
   host:     localhost
   port:     5432
   schema_search_path: public
