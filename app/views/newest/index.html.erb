@@ -1,0 +1,19 @@
+<%= render "layouts/header" %>
+<div class="container">
+  <ul class="newslist">
+    <% @news.each do |news,i| %>  
+    <li>
+      <h3>
+        <a href="<%= news.link %>" target="_blank"><%= news.title %></a>
+      </h3>
+      <% if !news.description.empty? %>
+      <div>
+          <%= news.description %>
+      </div>
+      <% end %>
+    </li>
+    <% end %>
+  </ul>
+  <%= paginate @news%>
+</div>
+<%= render "layouts/footer" %>

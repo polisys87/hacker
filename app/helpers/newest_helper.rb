@@ -1,0 +1,2 @@
+module NewestHelper
+end
