@@ -1,4 +1,18 @@
 Hacker::Application.routes.draw do
+  
+  get   '/login', :to => 'sessions#new', :as => :login
+  
+  get '/auth/:provider/callback', :to => 'sessions#create'
+  get '/auth/failure', :to => 'sessions#failure'
+
+  get 'sessions/new'
+
+  get 'sessions/create'
+
+  get 'sessions/failure'
+
+  get '/logout', :to => 'sessions#destroy'
+
   get "newest/index"
 
   namespace :admin do
