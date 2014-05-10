@@ -1,6 +1,9 @@
 about=
+assets\:cache\:clean=
 assets\:clean=
 assets\:clean\:all=
+assets\:clean_expired=
+assets\:clean_expired\:all=
 assets\:environment=
 assets\:precompile=
 assets\:precompile\:all=
