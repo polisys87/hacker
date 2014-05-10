@@ -1,0 +1,24 @@
+// Place all the styles related to the newest controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.newslist>li {
+    position: relative;
+    min-height: 66px;
+    padding-bottom: 20px;
+    margin: 0 0 20px;
+    list-style: none;
+    border-bottom: 1px solid #eee;
+}
+
+ul.newslist h3 a, ul.newslist h3 a:visited {
+    color: #428bca;
+    word-wrap: break-word;
+    text-decoration: none;
+}
+
+ul.newslist h3 a:hover, ul.newslist h3 a:focus {
+    text-decoration: underline;
+    background: none;
+    color: #2a6496;
+}
