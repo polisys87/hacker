@@ -42,3 +42,6 @@ gem 'kaminari'
 gem 'has_scope'
 
 gem 'turbo-sprockets-rails3'
+
+gem 'omniauth'
+gem 'omniauth-facebook'

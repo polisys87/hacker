@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/var/www/crm-news/Gemfile</file>
+        <file>file:/var/www/crm-news/config/database.yml</file>
+        <file>file:/var/www/crm-news/config/environments/production.rb</file>
+        <file>file:/var/www/crm-news/app/controllers/newest_controller.rb</file>
+        <file>file:/var/www/crm-news/config/routes.rb</file>
+        <file>file:/var/www/crm-news/db/schema.rb</file>
+        <file>file:/var/www/crm-news/app/views/newest/index.html.erb</file>
+        <file>file:/var/www/crm-news/app/views/layouts/_header.html.erb</file>
+    </open-files>
+</project-private>

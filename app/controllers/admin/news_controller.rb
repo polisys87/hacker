@@ -1,4 +1,4 @@
-class Admin::NewsController < ApplicationController
+class Admin::NewsController < BackendApplicationController
   # GET /admin/news
   # GET /admin/news.json
   def index

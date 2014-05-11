@@ -15101,3 +15101,2029 @@ Served asset /application.css - 304 Not Modified (10ms)
 
 Started GET "/assets/fb-login.png" for 127.0.0.1 at 2014-05-10 23:30:05 +0530
 Served asset /fb-login.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin/news/1/edit" for 127.0.0.1 at 2014-05-11 00:36:25 +0530
+Connecting to database specified by database.yml
+
+PG::ConnectionBad (FATAL:  password authentication failed for user "user_crm_news"
+FATAL:  password authentication failed for user "user_crm_news"
+):
+  activerecord (3.2.17) lib/active_record/connection_adapters/postgresql_adapter.rb:1222:in `initialize'
+  activerecord (3.2.17) lib/active_record/connection_adapters/postgresql_adapter.rb:1222:in `new'
+  activerecord (3.2.17) lib/active_record/connection_adapters/postgresql_adapter.rb:1222:in `connect'
+  activerecord (3.2.17) lib/active_record/connection_adapters/postgresql_adapter.rb:324:in `initialize'
+  activerecord (3.2.17) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `new'
+  activerecord (3.2.17) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `postgresql_connection'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:315:in `new_connection'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:325:in `checkout_new_connection'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:247:in `block (2 levels) in checkout'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:242:in `loop'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:242:in `block in checkout'
+  /usr/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:239:in `checkout'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:102:in `block in connection'
+  /usr/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:101:in `connection'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:410:in `retrieve_connection'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_specification.rb:171:in `retrieve_connection'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_specification.rb:145:in `connection'
+  activerecord (3.2.17) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.17) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:405:in `_run__1042396020__call__215680792__callbacks'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.17) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.17) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.17) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.17) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.17) lib/rails/engine.rb:484:in `call'
+  railties (3.2.17) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.17) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (62.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-11 13:52:49 +0530
+Connecting to database specified by database.yml
+
+PG::ConnectionBad (FATAL:  password authentication failed for user "user_crm_news"
+FATAL:  password authentication failed for user "user_crm_news"
+):
+  activerecord (3.2.17) lib/active_record/connection_adapters/postgresql_adapter.rb:1222:in `initialize'
+  activerecord (3.2.17) lib/active_record/connection_adapters/postgresql_adapter.rb:1222:in `new'
+  activerecord (3.2.17) lib/active_record/connection_adapters/postgresql_adapter.rb:1222:in `connect'
+  activerecord (3.2.17) lib/active_record/connection_adapters/postgresql_adapter.rb:324:in `initialize'
+  activerecord (3.2.17) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `new'
+  activerecord (3.2.17) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `postgresql_connection'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:315:in `new_connection'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:325:in `checkout_new_connection'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:247:in `block (2 levels) in checkout'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:242:in `loop'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:242:in `block in checkout'
+  /usr/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:239:in `checkout'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:102:in `block in connection'
+  /usr/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:101:in `connection'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:410:in `retrieve_connection'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_specification.rb:171:in `retrieve_connection'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_specification.rb:145:in `connection'
+  activerecord (3.2.17) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.17) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:405:in `_run__726869486__call__945003447__callbacks'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.17) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.17) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.17) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.17) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.17) lib/rails/engine.rb:484:in `call'
+  railties (3.2.17) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.17) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-11 13:53:20 +0530
+
+PG::ConnectionBad (FATAL:  password authentication failed for user "user_crm_news"
+FATAL:  password authentication failed for user "user_crm_news"
+):
+  activerecord (3.2.17) lib/active_record/connection_adapters/postgresql_adapter.rb:1222:in `initialize'
+  activerecord (3.2.17) lib/active_record/connection_adapters/postgresql_adapter.rb:1222:in `new'
+  activerecord (3.2.17) lib/active_record/connection_adapters/postgresql_adapter.rb:1222:in `connect'
+  activerecord (3.2.17) lib/active_record/connection_adapters/postgresql_adapter.rb:324:in `initialize'
+  activerecord (3.2.17) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `new'
+  activerecord (3.2.17) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `postgresql_connection'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:315:in `new_connection'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:325:in `checkout_new_connection'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:247:in `block (2 levels) in checkout'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:242:in `loop'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:242:in `block in checkout'
+  /usr/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:239:in `checkout'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:102:in `block in connection'
+  /usr/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:101:in `connection'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:410:in `retrieve_connection'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_specification.rb:171:in `retrieve_connection'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_specification.rb:145:in `connection'
+  activerecord (3.2.17) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.17) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:405:in `_run__726869486__call__945003447__callbacks'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.17) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.17) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.17) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.17) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.17) lib/rails/engine.rb:484:in `call'
+  railties (3.2.17) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.17) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-11 13:53:44 +0530
+Connecting to database specified by database.yml
+Processing by NewestController#index as HTML
+  Rendered layouts/_header.html.erb (0.4ms)
+  [1m[36mAdmin::News Load (0.5ms)[0m  [1mSELECT "admin_news".* FROM "admin_news" LIMIT 5 OFFSET 0[0m
+  [1m[35m (0.8ms)[0m  SELECT COUNT(*) FROM "admin_news" 
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered newest/index.html.erb within layouts/application (59.1ms)
+Completed 200 OK in 172.6ms (Views: 118.2ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-05-11 13:53:45 +0530
+Compiled bootstrap.min.css  (0ms)  (pid 7903)
+Served asset /bootstrap.min.css - 200 OK (57ms)
+
+
+Started GET "/assets/navbar-fixed-top.css" for 127.0.0.1 at 2014-05-11 13:53:45 +0530
+Compiled navbar-fixed-top.css  (0ms)  (pid 7903)
+Served asset /navbar-fixed-top.css - 200 OK (23ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-11 13:53:45 +0530
+Compiled bootstrap.min.js  (0ms)  (pid 7903)
+Served asset /bootstrap.min.js - 200 OK (20ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-11 13:53:46 +0530
+Compiled jquery_ujs.js  (0ms)  (pid 7903)
+Served asset /jquery_ujs.js - 200 OK (61ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-05-11 13:53:46 +0530
+Compiled jquery.js  (5ms)  (pid 7903)
+Served asset /jquery.js - 200 OK (73ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-05-11 13:53:46 +0530
+Compiled admin/dashboard.css  (0ms)  (pid 7903)
+Warning. Error encountered while saving cache /var/www/crm-news/tmp/cache/sass/88430f7bd3310607df4a80a7144e3c28700a6c86/dashboard.css.scssc: can't dump anonymous class #<Class:0xa9d6818>
+Compiled admin/dashboard.css  (52ms)  (pid 7903)
+Warning. Error encountered while saving cache /var/www/crm-news/tmp/cache/sass/88430f7bd3310607df4a80a7144e3c28700a6c86/news.css.scssc: can't dump anonymous class #<Class:0xa9d6818>
+Compiled admin/news.css  (1ms)  (pid 7903)
+Warning. Error encountered while saving cache /var/www/crm-news/tmp/cache/sass/e9897f8edd852de47e385a7d59796d0f088b0c17/home.css.scssc: can't dump anonymous class #<Class:0xa9d6818>
+Compiled home.css  (1ms)  (pid 7903)
+Warning. Error encountered while saving cache /var/www/crm-news/tmp/cache/sass/e9897f8edd852de47e385a7d59796d0f088b0c17/newest.css.scssc: can't dump anonymous class #<Class:0xa9d6818>
+Compiled newest.css  (6ms)  (pid 7903)
+Warning. Error encountered while saving cache /var/www/crm-news/tmp/cache/sass/e9897f8edd852de47e385a7d59796d0f088b0c17/scaffolds.css.scssc: can't dump anonymous class #<Class:0xa9d6818>
+Compiled scaffolds.css  (71ms)  (pid 7903)
+Compiled application.css  (263ms)  (pid 7903)
+Served asset /application.css - 200 OK (284ms)
+
+
+Started GET "/assets/fb-login.png" for 127.0.0.1 at 2014-05-11 13:53:46 +0530
+Served asset /fb-login.png - 200 OK (7ms)
+
+
+Started GET "/admin/news" for 127.0.0.1 at 2014-05-11 13:54:00 +0530
+Processing by Admin::NewsController#index as HTML
+Filter chain halted as #<Proc:0xb5d026a8@/var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_controller/metal/http_authentication.rb:112> rendered or redirected
+Completed 401 Unauthorized in 0.5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/news" for 127.0.0.1 at 2014-05-11 13:54:23 +0530
+Processing by Admin::NewsController#index as HTML
+  Rendered layouts/_admin_header.html.erb (0.5ms)
+  Rendered layouts/_admin_left_panel.html.erb (0.8ms)
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "admin_news" LIMIT 5 OFFSET 0) subquery_for_count [0m
+  [1m[35mAdmin::News Load (0.3ms)[0m  SELECT "admin_news".* FROM "admin_news" LIMIT 5 OFFSET 0
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "admin_news" [0m
+  Rendered layouts/_admin_footer.html.erb (0.4ms)
+  Rendered admin/news/index.html.erb (37.7ms)
+Completed 200 OK in 41.0ms (Views: 38.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/admin/dashboard.css" for 127.0.0.1 at 2014-05-11 13:54:24 +0530
+Served asset /admin/dashboard.css - 200 OK (19ms)
+
+
+Started GET "/admin/news" for 127.0.0.1 at 2014-05-11 13:55:25 +0530
+Processing by Admin::NewsController#index as HTML
+  Rendered layouts/_admin_header.html.erb (0.2ms)
+  Rendered layouts/_admin_left_panel.html.erb (5.4ms)
+  [1m[35m (5.7ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "admin_news" LIMIT 5 OFFSET 0) subquery_for_count 
+  [1m[36mAdmin::News Load (3.4ms)[0m  [1mSELECT "admin_news".* FROM "admin_news" LIMIT 5 OFFSET 0[0m
+  [1m[35m (5.5ms)[0m  SELECT COUNT(*) FROM "admin_news" 
+  Rendered layouts/_admin_footer.html.erb (0.0ms)
+  Rendered admin/news/index.html.erb within layouts/backend_application (29.5ms)
+Completed 200 OK in 41.1ms (Views: 25.5ms | ActiveRecord: 14.7ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-05-11 13:55:25 +0530
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/navbar-fixed-top.css" for 127.0.0.1 at 2014-05-11 13:55:25 +0530
+Served asset /navbar-fixed-top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-05-11 13:55:25 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-11 13:55:25 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-11 13:55:25 +0530
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/dashboard.css" for 127.0.0.1 at 2014-05-11 13:55:25 +0530
+Served asset /admin/dashboard.css - 304 Not Modified (0ms)
+
+
+Started GET "/admin/news/1" for 127.0.0.1 at 2014-05-11 13:55:31 +0530
+Processing by Admin::NewsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin::News Load (0.9ms)[0m  [1mSELECT "admin_news".* FROM "admin_news" WHERE "admin_news"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered layouts/_admin_header.html.erb (0.1ms)
+  Rendered layouts/_admin_left_panel.html.erb (0.1ms)
+  Rendered layouts/_admin_footer.html.erb (0.0ms)
+  Rendered admin/news/show.html.erb within layouts/backend_application (3.9ms)
+Completed 200 OK in 25.1ms (Views: 18.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-05-11 13:55:31 +0530
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/navbar-fixed-top.css" for 127.0.0.1 at 2014-05-11 13:55:31 +0530
+Served asset /navbar-fixed-top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-05-11 13:55:31 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-11 13:55:31 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-11 13:55:31 +0530
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/dashboard.css" for 127.0.0.1 at 2014-05-11 13:55:31 +0530
+Served asset /admin/dashboard.css - 304 Not Modified (0ms)
+
+
+Started GET "/admin/news" for 127.0.0.1 at 2014-05-11 13:55:33 +0530
+Processing by Admin::NewsController#index as HTML
+  Rendered layouts/_admin_header.html.erb (0.0ms)
+  Rendered layouts/_admin_left_panel.html.erb (0.3ms)
+  [1m[35m (4.2ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "admin_news" LIMIT 5 OFFSET 0) subquery_for_count 
+  [1m[36mAdmin::News Load (1.9ms)[0m  [1mSELECT "admin_news".* FROM "admin_news" LIMIT 5 OFFSET 0[0m
+  [1m[35m (2.0ms)[0m  SELECT COUNT(*) FROM "admin_news" 
+  Rendered layouts/_admin_footer.html.erb (0.0ms)
+  Rendered admin/news/index.html.erb within layouts/backend_application (16.6ms)
+Completed 200 OK in 23.5ms (Views: 14.9ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-05-11 13:55:34 +0530
+Served asset /bootstrap.min.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/navbar-fixed-top.css" for 127.0.0.1 at 2014-05-11 13:55:34 +0530
+Served asset /navbar-fixed-top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-05-11 13:55:34 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-11 13:55:34 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-11 13:55:34 +0530
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/dashboard.css" for 127.0.0.1 at 2014-05-11 13:55:34 +0530
+Served asset /admin/dashboard.css - 304 Not Modified (0ms)
+
+
+Started GET "/admin/news/2/edit" for 127.0.0.1 at 2014-05-11 13:55:40 +0530
+Processing by Admin::NewsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdmin::News Load (4.1ms)[0m  [1mSELECT "admin_news".* FROM "admin_news" WHERE "admin_news"."id" = $1 LIMIT 1[0m  [["id", "2"]]
+  Rendered layouts/_admin_header.html.erb (0.0ms)
+  Rendered layouts/_admin_left_panel.html.erb (0.3ms)
+  Rendered admin/news/_form.html.erb (82.8ms)
+  Rendered layouts/_admin_footer.html.erb (0.1ms)
+  Rendered admin/news/edit.html.erb within layouts/backend_application (94.1ms)
+Completed 200 OK in 125.0ms (Views: 119.4ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-05-11 13:55:41 +0530
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/navbar-fixed-top.css" for 127.0.0.1 at 2014-05-11 13:55:41 +0530
+Served asset /navbar-fixed-top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-05-11 13:55:41 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-11 13:55:41 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-11 13:55:41 +0530
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/dashboard.css" for 127.0.0.1 at 2014-05-11 13:55:41 +0530
+Served asset /admin/dashboard.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-11 13:55:47 +0530
+Processing by NewestController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  [1m[35mAdmin::News Load (4.9ms)[0m  SELECT "admin_news".* FROM "admin_news" LIMIT 5 OFFSET 0
+  [1m[36m (1.7ms)[0m  [1mSELECT COUNT(*) FROM "admin_news" [0m
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered newest/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 11.9ms (Views: 5.0ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-05-11 13:55:47 +0530
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/navbar-fixed-top.css" for 127.0.0.1 at 2014-05-11 13:55:47 +0530
+Served asset /navbar-fixed-top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-05-11 13:55:47 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-11 13:55:47 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-11 13:55:47 +0530
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-05-11 13:55:47 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fb-login.png" for 127.0.0.1 at 2014-05-11 13:55:47 +0530
+Served asset /fb-login.png - 304 Not Modified (0ms)
+
+
+Started GET "/newest/index" for 127.0.0.1 at 2014-05-11 13:55:51 +0530
+Processing by NewestController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  [1m[35mAdmin::News Load (3.0ms)[0m  SELECT "admin_news".* FROM "admin_news" LIMIT 5 OFFSET 0
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "admin_news" [0m
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered newest/index.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 19.9ms (Views: 16.0ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-05-11 13:55:51 +0530
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/navbar-fixed-top.css" for 127.0.0.1 at 2014-05-11 13:55:51 +0530
+Served asset /navbar-fixed-top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-05-11 13:55:51 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-11 13:55:51 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-11 13:55:51 +0530
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-05-11 13:55:51 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fb-login.png" for 127.0.0.1 at 2014-05-11 13:55:51 +0530
+Served asset /fb-login.png - 304 Not Modified (0ms)
+
+
+Started GET "/newest/index" for 127.0.0.1 at 2014-05-11 13:57:11 +0530
+Processing by NewestController#index as HTML
+  Rendered layouts/_header.html.erb (0.6ms)
+  [1m[35mAdmin::News Load (3.7ms)[0m  SELECT "admin_news".* FROM "admin_news" LIMIT 5 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "admin_news" [0m
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered newest/index.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 36.6ms (Views: 29.5ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-05-11 13:57:12 +0530
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/navbar-fixed-top.css" for 127.0.0.1 at 2014-05-11 13:57:12 +0530
+Served asset /navbar-fixed-top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-05-11 13:57:12 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-05-11 13:57:12 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-11 13:57:12 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-11 13:57:12 +0530
+Served asset /bootstrap.min.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/fb-login.png" for 127.0.0.1 at 2014-05-11 13:57:12 +0530
+Served asset /fb-login.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin/news/2/edit" for 127.0.0.1 at 2014-05-11 13:57:14 +0530
+Processing by Admin::NewsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAdmin::News Load (4.4ms)[0m  SELECT "admin_news".* FROM "admin_news" WHERE "admin_news"."id" = $1 LIMIT 1  [["id", "2"]]
+  Rendered layouts/_admin_header.html.erb (0.5ms)
+  Rendered layouts/_admin_left_panel.html.erb (0.3ms)
+  Rendered admin/news/_form.html.erb (9.8ms)
+  Rendered layouts/_admin_footer.html.erb (0.0ms)
+  Rendered admin/news/edit.html.erb within layouts/backend_application (19.3ms)
+Completed 200 OK in 33.6ms (Views: 21.7ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-05-11 13:57:15 +0530
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/navbar-fixed-top.css" for 127.0.0.1 at 2014-05-11 13:57:15 +0530
+Served asset /navbar-fixed-top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/dashboard.css" for 127.0.0.1 at 2014-05-11 13:57:15 +0530
+Served asset /admin/dashboard.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-05-11 13:57:15 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-11 13:57:15 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-11 13:57:15 +0530
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/newest/index" for 127.0.0.1 at 2014-05-11 13:58:40 +0530
+Processing by NewestController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  [1m[36mAdmin::News Load (0.6ms)[0m  [1mSELECT "admin_news".* FROM "admin_news" LIMIT 5 OFFSET 0[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "admin_news" 
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered newest/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 17.3ms (Views: 15.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-05-11 13:58:40 +0530
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/navbar-fixed-top.css" for 127.0.0.1 at 2014-05-11 13:58:40 +0530
+Served asset /navbar-fixed-top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-05-11 13:58:40 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-05-11 13:58:40 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-11 13:58:40 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-11 13:58:40 +0530
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fb-login.png" for 127.0.0.1 at 2014-05-11 13:58:40 +0530
+Served asset /fb-login.png - 304 Not Modified (0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-05-11 13:58:43 +0530
+
+
+Started GET "/newest/index" for 127.0.0.1 at 2014-05-11 13:59:15 +0530
+Connecting to database specified by database.yml
+Processing by NewestController#index as HTML
+  Rendered layouts/_header.html.erb (0.3ms)
+  [1m[36mAdmin::News Load (0.6ms)[0m  [1mSELECT "admin_news".* FROM "admin_news" LIMIT 5 OFFSET 0[0m
+  [1m[35m (6.9ms)[0m  SELECT COUNT(*) FROM "admin_news" 
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered newest/index.html.erb within layouts/application (107.8ms)
+Completed 200 OK in 231.2ms (Views: 122.5ms | ActiveRecord: 23.5ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-05-11 13:59:17 +0530
+Served asset /bootstrap.min.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/navbar-fixed-top.css" for 127.0.0.1 at 2014-05-11 13:59:17 +0530
+Served asset /navbar-fixed-top.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-05-11 13:59:17 +0530
+Served asset /application.css - 304 Not Modified (29ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-05-11 13:59:17 +0530
+Served asset /jquery.js - 304 Not Modified (162ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-11 13:59:17 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-11 13:59:17 +0530
+Served asset /bootstrap.min.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/fb-login.png" for 127.0.0.1 at 2014-05-11 13:59:17 +0530
+Served asset /fb-login.png - 304 Not Modified (1ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-05-11 13:59:19 +0530
+
+
+Started GET "/auth/facebook/callback?code=AQCnjATyKJFdPqHjMEPsdExZia6S-BM-F0Yk0KVGFmgudBv1c9ISuqAr-J4aSlbS88-xEMUqOeOPJVnQyvQBDevG6ZQcyxlF0pHV07Aph__mOsmT8mTxWFe4qaWt23pFjlD58hejPNGGeiZ1GfMuHcePWDEuzqQxgagZNbwGXzm9dO-vW1LQbXmJxjndbu0xhwmMC41pqJve83IGFBASrcp7icY67zKC4aFjZjEpn2DFTRVr0yl4MNs-efpqUPzUdqoh-eifOiTD_BbbqvqMv6nraXB8H26prJ3IQ6HcLOPUpBkJAWQNhLWzKejgzGd7XuQ&state=21b4894d4bce6f29de3bba2df2d95d359e83e2ab9b9d6bb5" for 127.0.0.1 at 2014-05-11 13:59:20 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQCnjATyKJFdPqHjMEPsdExZia6S-BM-F0Yk0KVGFmgudBv1c9ISuqAr-J4aSlbS88-xEMUqOeOPJVnQyvQBDevG6ZQcyxlF0pHV07Aph__mOsmT8mTxWFe4qaWt23pFjlD58hejPNGGeiZ1GfMuHcePWDEuzqQxgagZNbwGXzm9dO-vW1LQbXmJxjndbu0xhwmMC41pqJve83IGFBASrcp7icY67zKC4aFjZjEpn2DFTRVr0yl4MNs-efpqUPzUdqoh-eifOiTD_BbbqvqMv6nraXB8H26prJ3IQ6HcLOPUpBkJAWQNhLWzKejgzGd7XuQ", "state"=>"21b4894d4bce6f29de3bba2df2d95d359e83e2ab9b9d6bb5", "provider"=>"facebook"}
+  [1m[36mAuthorization Load (0.9ms)[0m  [1mSELECT "authorizations".* FROM "authorizations" WHERE "authorizations"."provider" = 'facebook' AND "authorizations"."uid" = '10152782585244692' LIMIT 1[0m
+Completed 500 Internal Server Error in 57.8ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: name, email):
+  app/controllers/sessions_controller.rb:14:in `new'
+  app/controllers/sessions_controller.rb:14:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.0ms)
+
+
+Started GET "/auth/facebook/callback?code=AQCnjATyKJFdPqHjMEPsdExZia6S-BM-F0Yk0KVGFmgudBv1c9ISuqAr-J4aSlbS88-xEMUqOeOPJVnQyvQBDevG6ZQcyxlF0pHV07Aph__mOsmT8mTxWFe4qaWt23pFjlD58hejPNGGeiZ1GfMuHcePWDEuzqQxgagZNbwGXzm9dO-vW1LQbXmJxjndbu0xhwmMC41pqJve83IGFBASrcp7icY67zKC4aFjZjEpn2DFTRVr0yl4MNs-efpqUPzUdqoh-eifOiTD_BbbqvqMv6nraXB8H26prJ3IQ6HcLOPUpBkJAWQNhLWzKejgzGd7XuQ&state=21b4894d4bce6f29de3bba2df2d95d359e83e2ab9b9d6bb5" for 127.0.0.1 at 2014-05-11 14:02:12 +0530
+
+OAuth2::Error (: 
+{"error":{"message":"This authorization code has been used.","type":"OAuthException","code":100}}):
+  oauth2 (0.9.3) lib/oauth2/client.rb:110:in `request'
+  oauth2 (0.9.3) lib/oauth2/client.rb:135:in `get_token'
+  oauth2 (0.9.3) lib/oauth2/strategy/auth_code.rb:29:in `get_token'
+  omniauth-oauth2 (1.1.2) lib/omniauth/strategies/oauth2.rb:93:in `build_access_token'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:145:in `block in build_access_token'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:171:in `with_authorization_code!'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:145:in `build_access_token'
+  omniauth-oauth2 (1.1.2) lib/omniauth/strategies/oauth2.rb:75:in `callback_phase'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:71:in `callback_phase'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:227:in `callback_call'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:184:in `call!'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.1) lib/omniauth/builder.rb:59:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.17) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:405:in `_run__556385513__call__66114758__callbacks'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.17) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.17) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.17) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.17) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.17) lib/rails/engine.rb:484:in `call'
+  railties (3.2.17) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.17) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.5ms)
+
+
+Started GET "/newest/index" for 127.0.0.1 at 2014-05-11 14:03:46 +0530
+Processing by NewestController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  [1m[35mAdmin::News Load (0.3ms)[0m  SELECT "admin_news".* FROM "admin_news" LIMIT 5 OFFSET 0
+  [1m[36m (1.2ms)[0m  [1mSELECT COUNT(*) FROM "admin_news" [0m
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered newest/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 23.4ms (Views: 16.5ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-05-11 14:03:46 +0530
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/navbar-fixed-top.css" for 127.0.0.1 at 2014-05-11 14:03:46 +0530
+Served asset /navbar-fixed-top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-05-11 14:03:46 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-05-11 14:03:46 +0530
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-11 14:03:46 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-11 14:03:46 +0530
+Served asset /bootstrap.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/fb-login.png" for 127.0.0.1 at 2014-05-11 14:03:46 +0530
+Served asset /fb-login.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-11 14:03:46 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/newest/index" for 127.0.0.1 at 2014-05-11 14:03:46 +0530
+Processing by NewestController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  [1m[35mAdmin::News Load (9.5ms)[0m  SELECT "admin_news".* FROM "admin_news" LIMIT 5 OFFSET 0
+  [1m[36m (3.8ms)[0m  [1mSELECT COUNT(*) FROM "admin_news" [0m
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered newest/index.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 18.7ms (Views: 5.1ms | ActiveRecord: 13.3ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-11 14:03:46 +0530
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/newest/index" for 127.0.0.1 at 2014-05-11 14:03:46 +0530
+Processing by NewestController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  [1m[35mAdmin::News Load (6.4ms)[0m  SELECT "admin_news".* FROM "admin_news" LIMIT 5 OFFSET 0
+  [1m[36m (12.2ms)[0m  [1mSELECT COUNT(*) FROM "admin_news" [0m
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered newest/index.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 28.2ms (Views: 9.2ms | ActiveRecord: 18.6ms)
+
+
+Started GET "/newest/index" for 127.0.0.1 at 2014-05-11 14:03:46 +0530
+Processing by NewestController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  [1m[35mAdmin::News Load (21.0ms)[0m  SELECT "admin_news".* FROM "admin_news" LIMIT 5 OFFSET 0
+  [1m[36m (1.4ms)[0m  [1mSELECT COUNT(*) FROM "admin_news" [0m
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered newest/index.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 31.8ms (Views: 9.0ms | ActiveRecord: 22.4ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-05-11 14:03:46 +0530
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/navbar-fixed-top.css" for 127.0.0.1 at 2014-05-11 14:03:46 +0530
+Served asset /navbar-fixed-top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-05-11 14:03:46 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-05-11 14:03:46 +0530
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-11 14:03:46 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-11 14:03:46 +0530
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fb-login.png" for 127.0.0.1 at 2014-05-11 14:03:46 +0530
+Served asset /fb-login.png - 304 Not Modified (1ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-05-11 14:03:48 +0530
+
+
+Started GET "/auth/facebook/callback?code=AQDu0iURRRBqjDRWcUPoY6-lBGfTbT4qH_5cn_FrHyKuiI4_9Je-Cu_Lqxxzh_M4xuCcO9JBoKwq3mSo-Sh5R4G_ChuL4pMs7RZuuGzPUlTgyDJS2gFiP2YLQ3hs1_SCSyrLMeAKnBE-YkP7UGEXfXaAeQL8c_Nma_3VD2OQRa1HapsgzOfDdLwGBjd1jgHk6O0oFu--4wFa6eprLdvYUQSn2KWcQt7R6sdx6lEv6RSV4p-h1zDAUunY7cgFDDd5Qwfl9ROAx6NGggk-BQR6s7Vt1W86Uhdqt3lFnSnPBC07PzzO3JFaqwKn57kHWVWWj2U&state=0bda911254b18126af50e62084f18867325458aa4195b7c5" for 127.0.0.1 at 2014-05-11 14:04:21 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQDu0iURRRBqjDRWcUPoY6-lBGfTbT4qH_5cn_FrHyKuiI4_9Je-Cu_Lqxxzh_M4xuCcO9JBoKwq3mSo-Sh5R4G_ChuL4pMs7RZuuGzPUlTgyDJS2gFiP2YLQ3hs1_SCSyrLMeAKnBE-YkP7UGEXfXaAeQL8c_Nma_3VD2OQRa1HapsgzOfDdLwGBjd1jgHk6O0oFu--4wFa6eprLdvYUQSn2KWcQt7R6sdx6lEv6RSV4p-h1zDAUunY7cgFDDd5Qwfl9ROAx6NGggk-BQR6s7Vt1W86Uhdqt3lFnSnPBC07PzzO3JFaqwKn57kHWVWWj2U", "state"=>"0bda911254b18126af50e62084f18867325458aa4195b7c5", "provider"=>"facebook"}
+  Rendered text template (0.0ms)
+  [1m[35mAuthorization Load (0.3ms)[0m  SELECT "authorizations".* FROM "authorizations" WHERE "authorizations"."provider" = 'facebook' AND "authorizations"."uid" = '10152782585244692' LIMIT 1
+Completed 500 Internal Server Error in 52.5ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: name, email):
+  app/controllers/sessions_controller.rb:14:in `new'
+  app/controllers/sessions_controller.rb:14:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (29.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (35.5ms)
+
+
+Started GET "/auth/facebook/callback?code=AQDu0iURRRBqjDRWcUPoY6-lBGfTbT4qH_5cn_FrHyKuiI4_9Je-Cu_Lqxxzh_M4xuCcO9JBoKwq3mSo-Sh5R4G_ChuL4pMs7RZuuGzPUlTgyDJS2gFiP2YLQ3hs1_SCSyrLMeAKnBE-YkP7UGEXfXaAeQL8c_Nma_3VD2OQRa1HapsgzOfDdLwGBjd1jgHk6O0oFu--4wFa6eprLdvYUQSn2KWcQt7R6sdx6lEv6RSV4p-h1zDAUunY7cgFDDd5Qwfl9ROAx6NGggk-BQR6s7Vt1W86Uhdqt3lFnSnPBC07PzzO3JFaqwKn57kHWVWWj2U&state=0bda911254b18126af50e62084f18867325458aa4195b7c5" for 127.0.0.1 at 2014-05-11 14:09:57 +0530
+Connecting to database specified by database.yml
+
+OAuth2::Error (: 
+{"error":{"message":"This authorization code has expired.","type":"OAuthException","code":100}}):
+  oauth2 (0.9.3) lib/oauth2/client.rb:110:in `request'
+  oauth2 (0.9.3) lib/oauth2/client.rb:135:in `get_token'
+  oauth2 (0.9.3) lib/oauth2/strategy/auth_code.rb:29:in `get_token'
+  omniauth-oauth2 (1.1.2) lib/omniauth/strategies/oauth2.rb:93:in `build_access_token'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:145:in `block in build_access_token'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:171:in `with_authorization_code!'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:145:in `build_access_token'
+  omniauth-oauth2 (1.1.2) lib/omniauth/strategies/oauth2.rb:75:in `callback_phase'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:71:in `callback_phase'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:227:in `callback_call'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:184:in `call!'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.1) lib/omniauth/builder.rb:59:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.17) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:405:in `_run__296218896__call__786486546__callbacks'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.17) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.17) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.17) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.17) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.17) lib/rails/engine.rb:484:in `call'
+  railties (3.2.17) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.17) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.7ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-05-11 15:22:25 +0530
+
+
+Started GET "/auth/facebook/callback?code=AQDd18faaGgstMUobWlL7QL2gdhJNvUvKebDAQKE83kQqTTNfaq9ZOeeBAGiVKyTWqyKhQVHtSNfAJiplUStkTE2IIlP6dZVBch-Hv84zxxe-ZGJ20Nq2Fklq9QXcE874-oLqu_Ou3QlpYALV5CtGLYsBRE5cnaZWeLGMKm_tFaXkeP7K_TCP19D9QI8SOigasIMlmCKzvxCarPZNIIsSE4G9fMYoJkdslqYtfUXFqlXBA47kR7ycDm77tHgHUWePcR8FC7i1gGR8v0pLO0ynN5VCr4vA_2l8cyve_58if-6NhrHMVYvilYIrlcScEDJPXM&state=b2f82e4eba4c0417b8f47b713ed3ec0fb87f524e558fb57e" for 127.0.0.1 at 2014-05-11 15:22:36 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQDd18faaGgstMUobWlL7QL2gdhJNvUvKebDAQKE83kQqTTNfaq9ZOeeBAGiVKyTWqyKhQVHtSNfAJiplUStkTE2IIlP6dZVBch-Hv84zxxe-ZGJ20Nq2Fklq9QXcE874-oLqu_Ou3QlpYALV5CtGLYsBRE5cnaZWeLGMKm_tFaXkeP7K_TCP19D9QI8SOigasIMlmCKzvxCarPZNIIsSE4G9fMYoJkdslqYtfUXFqlXBA47kR7ycDm77tHgHUWePcR8FC7i1gGR8v0pLO0ynN5VCr4vA_2l8cyve_58if-6NhrHMVYvilYIrlcScEDJPXM", "state"=>"b2f82e4eba4c0417b8f47b713ed3ec0fb87f524e558fb57e", "provider"=>"facebook"}
+  Rendered text template (0.0ms)
+  [1m[36mAuthorization Load (1.0ms)[0m  [1mSELECT "authorizations".* FROM "authorizations" WHERE "authorizations"."provider" = 'facebook' AND "authorizations"."uid" = '10152782585244692' LIMIT 1[0m
+Completed 500 Internal Server Error in 102.5ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: name, email):
+  app/controllers/sessions_controller.rb:14:in `new'
+  app/controllers/sessions_controller.rb:14:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.8ms)
+
+
+Started GET "/auth/facebook/" for 127.0.0.1 at 2014-05-11 15:31:42 +0530
+
+
+Started GET "/auth/facebook/callback?code=AQBIX37fsXoop0cjzxXHNQEebU96COypR79q99F_yi12X5x1sKhvFIvSZ1mGx8YOSQb8rnEgnZeNEAaGHlEDAfoLBdLxM42Ey4Xn8tNDr1PIqra2JK-U0Eq-wrpLGx4SGn9UlcoNmD5F0C1fpaTV8oOmHSO5YiHYsqC-a9zXWPYciZVAU5YAz1JFsjvc3T9EE6kzXABKZ7D6eXB9SiU585q5hfbVtSP2HtdON1Fb1yjUkZ6sPc1lGxX8LsvRD8ymDW7Fdjc7sWQyJbcwPAD8ROrspEY05CoL7Ck6lZBh_hk4Tmmyap9_to1AxSIPs7vD6X4&state=d84061102eef14653f96b42b09dbcaf533366904fd320750" for 127.0.0.1 at 2014-05-11 15:31:50 +0530
+
+ActionController::RoutingError (undefined method `attr_accessible' for SessionsController:Class):
+  app/controllers/sessions_controller.rb:2:in `<class:SessionsController>'
+  app/controllers/sessions_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-05-11 15:34:39 +0530
+
+
+Started GET "/auth/facebook/callback?code=AQDkAjJTYE79Nj4EnkWa_GhjbEiDBhhfi-CbtWGlayollU_xROnoQ08MJlTLpGsukPunIYqjlXncAkl0LevvSMg0pNlgDmWAoQGVfTPQHlZlsd3qBmZl5hnmA3jbRDfUB0Gpju8Bk1AQICwu82TT4tYLY65ExsAp4wLRPHXIDeWbLflN3nNxfQVcP93lUmi5uMhyHuSZQIMLBM52taToOWJs47h-zQCs1K86Ev583YAquaYEBTTyp4LVzRvZVgtM1DvUWQMhmxykdL94G2E1qSbGceYYRZnkrYJ6K752Nkd3UfNghrwMwIkWwfmz2VNZVm0&state=78bd6d101d751070f444662e98d788987e5a660c2f61eae4" for 127.0.0.1 at 2014-05-11 15:35:03 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQDkAjJTYE79Nj4EnkWa_GhjbEiDBhhfi-CbtWGlayollU_xROnoQ08MJlTLpGsukPunIYqjlXncAkl0LevvSMg0pNlgDmWAoQGVfTPQHlZlsd3qBmZl5hnmA3jbRDfUB0Gpju8Bk1AQICwu82TT4tYLY65ExsAp4wLRPHXIDeWbLflN3nNxfQVcP93lUmi5uMhyHuSZQIMLBM52taToOWJs47h-zQCs1K86Ev583YAquaYEBTTyp4LVzRvZVgtM1DvUWQMhmxykdL94G2E1qSbGceYYRZnkrYJ6K752Nkd3UfNghrwMwIkWwfmz2VNZVm0", "state"=>"78bd6d101d751070f444662e98d788987e5a660c2f61eae4", "provider"=>"facebook"}
+  Rendered text template (0.0ms)
+  [1m[35mAuthorization Load (0.4ms)[0m  SELECT "authorizations".* FROM "authorizations" WHERE "authorizations"."provider" = 'facebook' AND "authorizations"."uid" = '10152782585244692' LIMIT 1
+Completed 500 Internal Server Error in 30.4ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: name, email):
+  app/controllers/sessions_controller.rb:16:in `new'
+  app/controllers/sessions_controller.rb:16:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.2ms)
+
+
+Started GET "/auth/facebook/" for 127.0.0.1 at 2014-05-11 16:03:54 +0530
+Connecting to database specified by database.yml
+
+
+Started GET "/auth/facebook/callback?code=AQB__KNxHnrNIf5312qQg3u3IR0Jb9CEYnSL1mNUUDjje3gwM-aJRBurAn5vK7rP8LsYJFw3O_tcO97KaD7MfT28GaPrRKkagM-U8KAyMgWuWUbhdquSBck49olbRajiKhOKDMwbgUNrXTzofyJz5oOfN_gd76ku0udZ63tp0ecJiWoYY1Od4yusBIykI6pvNhWoLCO30o2zpOVq6wCp100xhcKu9BsHAQYgDnIu11sjAMu-82bV446AR3SH6SOzx5H0cdm6Iu5SELNOySWbfaqdGZ8CNRirej7qi1na6qCC0RS5eg4EV0YCOo54i_6YTZk&state=b82938d616ed0c9d23f7e340fedec7b15f7e1addee99d807" for 127.0.0.1 at 2014-05-11 16:04:06 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQB__KNxHnrNIf5312qQg3u3IR0Jb9CEYnSL1mNUUDjje3gwM-aJRBurAn5vK7rP8LsYJFw3O_tcO97KaD7MfT28GaPrRKkagM-U8KAyMgWuWUbhdquSBck49olbRajiKhOKDMwbgUNrXTzofyJz5oOfN_gd76ku0udZ63tp0ecJiWoYY1Od4yusBIykI6pvNhWoLCO30o2zpOVq6wCp100xhcKu9BsHAQYgDnIu11sjAMu-82bV446AR3SH6SOzx5H0cdm6Iu5SELNOySWbfaqdGZ8CNRirej7qi1na6qCC0RS5eg4EV0YCOo54i_6YTZk", "state"=>"b82938d616ed0c9d23f7e340fedec7b15f7e1addee99d807", "provider"=>"facebook"}
+  Rendered text template (0.0ms)
+  [1m[36mAuthorization Load (0.8ms)[0m  [1mSELECT "authorizations".* FROM "authorizations" WHERE "authorizations"."provider" = 'facebook' AND "authorizations"."uid" = '10152782585244692' LIMIT 1[0m
+Completed 500 Internal Server Error in 142.3ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: name, email):
+  app/controllers/sessions_controller.rb:16:in `new'
+  app/controllers/sessions_controller.rb:16:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.7ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-05-11 16:33:16 +0530
+
+
+Started GET "/auth/facebook/callback?code=AQDUnDy74wRhbT3uuDisizeKdSuHcyV-DUI7p5bVrRz3c3gPDGAO9EWxZNHU0LB79VDL3WicUrG861bSFwvwwX6ZSoOBZrm5kPF1gteBh6UghiPMinS5iVZFOuDux0o8H58qefBXw_i9H3goedwuRAblFPM8vzLK6ULUGefMz1NAO5SSN7KNecrERi9MrB0dGSQsCxJvDxTx28utdr1g6Wf7o4W7Z27yU3BXsE_vw_zChjV3PEwOladLkT4b21uqFT9k3efRDoJQ0fr8gXGuONWRmHHzZSpwgCcqj1BYFbv1-CSIgIl-ScTFFs3Ws7bclzY&state=cb4eead58b71745d12c5219a895ab479db24318ffa269390" for 127.0.0.1 at 2014-05-11 16:33:17 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQDUnDy74wRhbT3uuDisizeKdSuHcyV-DUI7p5bVrRz3c3gPDGAO9EWxZNHU0LB79VDL3WicUrG861bSFwvwwX6ZSoOBZrm5kPF1gteBh6UghiPMinS5iVZFOuDux0o8H58qefBXw_i9H3goedwuRAblFPM8vzLK6ULUGefMz1NAO5SSN7KNecrERi9MrB0dGSQsCxJvDxTx28utdr1g6Wf7o4W7Z27yU3BXsE_vw_zChjV3PEwOladLkT4b21uqFT9k3efRDoJQ0fr8gXGuONWRmHHzZSpwgCcqj1BYFbv1-CSIgIl-ScTFFs3Ws7bclzY", "state"=>"cb4eead58b71745d12c5219a895ab479db24318ffa269390", "provider"=>"facebook"}
+  Rendered text template (0.0ms)
+  [1m[35mAuthorization Load (1.3ms)[0m  SELECT "authorizations".* FROM "authorizations" WHERE "authorizations"."provider" = 'facebook' AND "authorizations"."uid" = '10152782585244692' LIMIT 1
+Completed 500 Internal Server Error in 23.2ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: name, email):
+  app/controllers/sessions_controller.rb:16:in `new'
+  app/controllers/sessions_controller.rb:16:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.7ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-05-11 16:33:21 +0530
+
+
+Started GET "/auth/facebook/callback?code=AQAJXwafjQ4RRqWcmZAIRsquZ_mnDp9guTLyMesD1fdFxpcn7VPvTiQDGEVgGD0Un2pnyAJXI1zIf_kpFVqhjSN_G21xCyY7Hv5jyctkUpev8UZZSxFd_gaPDGhRyeDLRJB7d0oxmLlorR-VUAiMYVjYz3t950FaZTGMGm48W6Rmca3dbOP45xITKkUwGqyVh8kUaY7EWdaLmT1Qwd9Y3Tvohfp7SOAcg3FbVpIo4N6py6Ix6ioFQuhYC9LZu4xm1DbuvDoGqCjALMQhtPfPp44hW-BHTY-BKT8fz7b60phCkPYl6G2CKBBx8ObvB-sawiM&state=0e7fe3d1e6b9a144500847fcb969b003f892bca859e77194" for 127.0.0.1 at 2014-05-11 16:33:21 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQAJXwafjQ4RRqWcmZAIRsquZ_mnDp9guTLyMesD1fdFxpcn7VPvTiQDGEVgGD0Un2pnyAJXI1zIf_kpFVqhjSN_G21xCyY7Hv5jyctkUpev8UZZSxFd_gaPDGhRyeDLRJB7d0oxmLlorR-VUAiMYVjYz3t950FaZTGMGm48W6Rmca3dbOP45xITKkUwGqyVh8kUaY7EWdaLmT1Qwd9Y3Tvohfp7SOAcg3FbVpIo4N6py6Ix6ioFQuhYC9LZu4xm1DbuvDoGqCjALMQhtPfPp44hW-BHTY-BKT8fz7b60phCkPYl6G2CKBBx8ObvB-sawiM", "state"=>"0e7fe3d1e6b9a144500847fcb969b003f892bca859e77194", "provider"=>"facebook"}
+  Rendered text template (0.0ms)
+  [1m[36mAuthorization Load (0.5ms)[0m  [1mSELECT "authorizations".* FROM "authorizations" WHERE "authorizations"."provider" = 'facebook' AND "authorizations"."uid" = '10152782585244692' LIMIT 1[0m
+Completed 500 Internal Server Error in 5.9ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: name, email):
+  app/controllers/sessions_controller.rb:16:in `new'
+  app/controllers/sessions_controller.rb:16:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.8ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-05-11 16:35:27 +0530
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-05-11 16:35:27 +0530
+
+
+Started GET "/auth/facebook/callback?code=AQBu-CrVEN6YkUcH-t_H8AF5ZeBrqW1RtYbSy-475Lel2iEfqQ9nekCCLJnNNvvLKcqdD86YBdIG9fMWLH-OdSctf6jXnDh435CM5XHaAhKI3UDXZKnEz5uOb0GmZSDfROIKzUF4DghEIp74lVKSDsx5M_B0aOkWHfD_RV0Gc2G7Uo9KE0RKazP34STmbbAn2ZxPJcIJzPnucHv3Pf_FqejPVJzInLCfy0B9eMDRWw5B2pdTByaACdHdadpkUauk5X9Jx7E6zHcWj6SE1YgTvaE-6JIQuAf-No62bYXJV5i7WXEp1v8x0P9FIYhrcrgyJwY&state=857f2a66633410b604dfcffd675c6ebb0842bdb267a06f65" for 127.0.0.1 at 2014-05-11 16:35:30 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQBu-CrVEN6YkUcH-t_H8AF5ZeBrqW1RtYbSy-475Lel2iEfqQ9nekCCLJnNNvvLKcqdD86YBdIG9fMWLH-OdSctf6jXnDh435CM5XHaAhKI3UDXZKnEz5uOb0GmZSDfROIKzUF4DghEIp74lVKSDsx5M_B0aOkWHfD_RV0Gc2G7Uo9KE0RKazP34STmbbAn2ZxPJcIJzPnucHv3Pf_FqejPVJzInLCfy0B9eMDRWw5B2pdTByaACdHdadpkUauk5X9Jx7E6zHcWj6SE1YgTvaE-6JIQuAf-No62bYXJV5i7WXEp1v8x0P9FIYhrcrgyJwY", "state"=>"857f2a66633410b604dfcffd675c6ebb0842bdb267a06f65", "provider"=>"facebook"}
+  Rendered text template (0.0ms)
+  [1m[35mAuthorization Load (0.3ms)[0m  SELECT "authorizations".* FROM "authorizations" WHERE "authorizations"."provider" = 'facebook' AND "authorizations"."uid" = '10152782585244692' LIMIT 1
+Completed 500 Internal Server Error in 28.0ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: name, email):
+  app/controllers/sessions_controller.rb:16:in `new'
+  app/controllers/sessions_controller.rb:16:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-05-11 16:35:52 +0530
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-05-11 16:35:52 +0530
+
+
+Started GET "/auth/facebook/callback?code=AQDY1zrvSsHoG9hbxKyuvtr3YaDjaSOWQ0RyEy2dLlqFfZex9YX4R8VPsfpT7pDVjlyKDPvrcXz6b0jJEgX-dgkYebtA8uIofpkG1QKuvL6bie5kybiblw2vKwk6t8ABW1nFiKV4KJk4IxdyOGpfU8bSmaJ7xriHJElbglJHIAIG_6jkg4cREQdhDCjRRUpSdigUyTzt-5l_vBAx73W6yH4p4ZgkMG0WFryZw5yxDUDZ935r9ALSBgvGCrK8GfL6_ts-34LWParZULVYx2K7scEU1-0xDhxzIk7NE1tLgw90xKmo4Y-d3ZryvZ3snb4lawM&state=c10c0695a4a58a41fe125315cd6ea92079d5a0130f92bf68" for 127.0.0.1 at 2014-05-11 16:35:53 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQDY1zrvSsHoG9hbxKyuvtr3YaDjaSOWQ0RyEy2dLlqFfZex9YX4R8VPsfpT7pDVjlyKDPvrcXz6b0jJEgX-dgkYebtA8uIofpkG1QKuvL6bie5kybiblw2vKwk6t8ABW1nFiKV4KJk4IxdyOGpfU8bSmaJ7xriHJElbglJHIAIG_6jkg4cREQdhDCjRRUpSdigUyTzt-5l_vBAx73W6yH4p4ZgkMG0WFryZw5yxDUDZ935r9ALSBgvGCrK8GfL6_ts-34LWParZULVYx2K7scEU1-0xDhxzIk7NE1tLgw90xKmo4Y-d3ZryvZ3snb4lawM", "state"=>"c10c0695a4a58a41fe125315cd6ea92079d5a0130f92bf68", "provider"=>"facebook"}
+  Rendered text template (0.0ms)
+  [1m[36mAuthorization Load (0.3ms)[0m  [1mSELECT "authorizations".* FROM "authorizations" WHERE "authorizations"."provider" = 'facebook' AND "authorizations"."uid" = '10152782585244692' LIMIT 1[0m
+Completed 500 Internal Server Error in 26.8ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: name, email):
+  app/controllers/sessions_controller.rb:16:in `new'
+  app/controllers/sessions_controller.rb:16:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.4ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-05-11 16:39:04 +0530
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-05-11 16:39:05 +0530
+
+
+Started GET "/auth/facebook/callback?code=AQALbOryPYUCktwV5ZqS8HRjj_nUH1WcU82DEFMhrS4ZQrkROhytsc7undR_tetZYTQlKgtQjOsllTKNjD91ym4ZH0zlmkK3G8rIDCEt5YOORlKuUfKKAGHr1RlDKXrkawOcaXKaPxtlepUTjo9se0NnPlOlvD4tQv5euR-JMMiyiMicCh_qQjCvO2mk1dZmg31NASMcwflFBU3lR2IbalPO9n8_qli_5Z7CWkj7xIx0bcqWIpmcfNQzpc8Yv3D1BIWvpEjMEHMrglumpW_u72njdKt8gGLzj8458Tn1M2yTqBRFhDcJ0sKFHkpFaOM3IqU&state=2f73c1a1910bb8ca862b32eec1eef778c735070c8072b714" for 127.0.0.1 at 2014-05-11 16:39:18 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQALbOryPYUCktwV5ZqS8HRjj_nUH1WcU82DEFMhrS4ZQrkROhytsc7undR_tetZYTQlKgtQjOsllTKNjD91ym4ZH0zlmkK3G8rIDCEt5YOORlKuUfKKAGHr1RlDKXrkawOcaXKaPxtlepUTjo9se0NnPlOlvD4tQv5euR-JMMiyiMicCh_qQjCvO2mk1dZmg31NASMcwflFBU3lR2IbalPO9n8_qli_5Z7CWkj7xIx0bcqWIpmcfNQzpc8Yv3D1BIWvpEjMEHMrglumpW_u72njdKt8gGLzj8458Tn1M2yTqBRFhDcJ0sKFHkpFaOM3IqU", "state"=>"2f73c1a1910bb8ca862b32eec1eef778c735070c8072b714", "provider"=>"facebook"}
+  Rendered text template (0.0ms)
+  [1m[35mAuthorization Load (0.3ms)[0m  SELECT "authorizations".* FROM "authorizations" WHERE "authorizations"."provider" = 'facebook' AND "authorizations"."uid" = '10152782585244692' LIMIT 1
+Completed 500 Internal Server Error in 103.9ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: provider, uid):
+  app/controllers/sessions_controller.rb:17:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-05-11 16:40:27 +0530
+Connecting to database specified by database.yml
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-05-11 16:40:28 +0530
+
+
+Started GET "/auth/facebook/callback?code=AQDbXyXrUKUwvdUBZvNKO5dGk5_yZ3M_FkJLouJbcDmd7YFx4RMIY8i-cgy9S7Mjzm0-3l1HruZcZGtBRxBAecGicnZjD7fYDmsrczUsVSmtNJ2jvjyyeNWHlNtT7RXfYxhiL_R5GiDNAzV8SEmg9K68nMC5s9JAF4erA0F86PqGToIX0qyurt89b-YvGUCocyOEbNE4TLIa1Y2MhRQUUCIRL5EH4txT7JOVZtsXq8OBadnkpUptMEnwmuh6_FLv1zRbC-LJ0Jmy58ME3AaXAkK807J92DGI5kc8q_vURpdUsyG8cCXHsBqIZ5mIhnhfmnM&state=094da2fc10a2b0d93d16ffbf6c270459ba42782d892b808a" for 127.0.0.1 at 2014-05-11 16:40:28 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQDbXyXrUKUwvdUBZvNKO5dGk5_yZ3M_FkJLouJbcDmd7YFx4RMIY8i-cgy9S7Mjzm0-3l1HruZcZGtBRxBAecGicnZjD7fYDmsrczUsVSmtNJ2jvjyyeNWHlNtT7RXfYxhiL_R5GiDNAzV8SEmg9K68nMC5s9JAF4erA0F86PqGToIX0qyurt89b-YvGUCocyOEbNE4TLIa1Y2MhRQUUCIRL5EH4txT7JOVZtsXq8OBadnkpUptMEnwmuh6_FLv1zRbC-LJ0Jmy58ME3AaXAkK807J92DGI5kc8q_vURpdUsyG8cCXHsBqIZ5mIhnhfmnM", "state"=>"094da2fc10a2b0d93d16ffbf6c270459ba42782d892b808a", "provider"=>"facebook"}
+  Rendered text template (0.0ms)
+  [1m[36mAuthorization Load (3.8ms)[0m  [1mSELECT "authorizations".* FROM "authorizations" WHERE "authorizations"."provider" = 'facebook' AND "authorizations"."uid" = '10152782585244692' LIMIT 1[0m
+Completed 500 Internal Server Error in 222.6ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: provider, uid):
+  app/controllers/sessions_controller.rb:17:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.7ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-05-11 16:41:02 +0530
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-05-11 16:41:02 +0530
+
+
+Started GET "/auth/facebook/callback?code=AQBoVm4j2--H170DAdMAoCH5rRnS37EGiHjX-50yYKXh7IUwPnBhcbR7xpMQo85eZvob5expUPje8p5VLQYrnrowTSs_F5se86UXGuWqoNOuNJtGl5ZZPu9D1LG-WkS3dZ8_np4apNVtfZjEoEMFksvF1ICSOsYRDMem163qJFJHYbHkWza-nOjnGDGLo69Kni7DEps9z0EI8i_Ko0klXKHabv5wCed_sYcQRrFugZNX0aIxMLeKyxy6YEzL6CPFQFAjxew2P9Zl6QW5h_GCRmAMx_AOKMAk_qgc6mbk1tEP0ulFfU1EDMxZd3IHNfG90mQ&state=86b6ef4906d58e82fcb46229f8bff41354c22b6fb5997d8c" for 127.0.0.1 at 2014-05-11 16:41:03 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQBoVm4j2--H170DAdMAoCH5rRnS37EGiHjX-50yYKXh7IUwPnBhcbR7xpMQo85eZvob5expUPje8p5VLQYrnrowTSs_F5se86UXGuWqoNOuNJtGl5ZZPu9D1LG-WkS3dZ8_np4apNVtfZjEoEMFksvF1ICSOsYRDMem163qJFJHYbHkWza-nOjnGDGLo69Kni7DEps9z0EI8i_Ko0klXKHabv5wCed_sYcQRrFugZNX0aIxMLeKyxy6YEzL6CPFQFAjxew2P9Zl6QW5h_GCRmAMx_AOKMAk_qgc6mbk1tEP0ulFfU1EDMxZd3IHNfG90mQ", "state"=>"86b6ef4906d58e82fcb46229f8bff41354c22b6fb5997d8c", "provider"=>"facebook"}
+  Rendered text template (0.0ms)
+  [1m[35mAuthorization Load (0.3ms)[0m  SELECT "authorizations".* FROM "authorizations" WHERE "authorizations"."provider" = 'facebook' AND "authorizations"."uid" = '10152782585244692' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (87.1ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Sun, 11 May 2014 11:11:06 UTC +00:00], ["email", "debasys@gmail.com"], ["name", "Debashis Mandal"], ["updated_at", Sun, 11 May 2014 11:11:06 UTC +00:00]]
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "authorizations" ("created_at", "provider", "uid", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Sun, 11 May 2014 11:11:06 UTC +00:00], ["provider", "facebook"], ["uid", "10152782585244692"], ["updated_at", Sun, 11 May 2014 11:11:06 UTC +00:00], ["user_id", 1]]
+  [1m[35m (26.4ms)[0m  COMMIT
+Completed 500 Internal Server Error in 215.5ms
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/sessions_controller.rb:20:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.8ms)
+
+
+Started GET "/auth/facebook/callback?code=AQBoVm4j2--H170DAdMAoCH5rRnS37EGiHjX-50yYKXh7IUwPnBhcbR7xpMQo85eZvob5expUPje8p5VLQYrnrowTSs_F5se86UXGuWqoNOuNJtGl5ZZPu9D1LG-WkS3dZ8_np4apNVtfZjEoEMFksvF1ICSOsYRDMem163qJFJHYbHkWza-nOjnGDGLo69Kni7DEps9z0EI8i_Ko0klXKHabv5wCed_sYcQRrFugZNX0aIxMLeKyxy6YEzL6CPFQFAjxew2P9Zl6QW5h_GCRmAMx_AOKMAk_qgc6mbk1tEP0ulFfU1EDMxZd3IHNfG90mQ&state=86b6ef4906d58e82fcb46229f8bff41354c22b6fb5997d8c" for 127.0.0.1 at 2014-05-11 16:41:29 +0530
+
+OAuth2::Error (: 
+{"error":{"message":"This authorization code has been used.","type":"OAuthException","code":100}}):
+  oauth2 (0.9.3) lib/oauth2/client.rb:110:in `request'
+  oauth2 (0.9.3) lib/oauth2/client.rb:135:in `get_token'
+  oauth2 (0.9.3) lib/oauth2/strategy/auth_code.rb:29:in `get_token'
+  omniauth-oauth2 (1.1.2) lib/omniauth/strategies/oauth2.rb:93:in `build_access_token'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:145:in `block in build_access_token'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:171:in `with_authorization_code!'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:145:in `build_access_token'
+  omniauth-oauth2 (1.1.2) lib/omniauth/strategies/oauth2.rb:75:in `callback_phase'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:71:in `callback_phase'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:227:in `callback_call'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:184:in `call!'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.1) lib/omniauth/builder.rb:59:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.17) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:405:in `_run__708726997__call__197711673__callbacks'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.17) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.17) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.17) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.17) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.17) lib/rails/engine.rb:484:in `call'
+  railties (3.2.17) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.17) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (56.5ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-05-11 16:41:35 +0530
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-05-11 16:41:36 +0530
+
+
+Started GET "/auth/facebook/callback?code=AQBhUxQxyQJ13-N_Exz8JFg9t31GqDMTWww-1QS5hOttxgb_dycf1JvhQAX4owxtT_Fp9Gj6nkC_hMBPNO3HdqIF6O_3QPwR3WfoVSSJLwmQEw75uQ6JdujA-EudvJlpzN6jg4EM1wprJCW8dCmjreilOTpikBsngWa0f144Z-dV64CDrPfozs3dWC_nm92mE0YU9bzWiXiQeQCUy5GFRRIXH5iRTAw7EJNgfzr3q_PM3V88lzY2Us82YHIpUla7rBND6dNly5TumdDJ20HMnW_ikMDfXybb3CcxI5J1PgMcvv8EPvRQnTwQikOxdYQoF-Y&state=5c34cac73425d2732b29c187cae213b9d5a94fddab801787" for 127.0.0.1 at 2014-05-11 16:41:36 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQBhUxQxyQJ13-N_Exz8JFg9t31GqDMTWww-1QS5hOttxgb_dycf1JvhQAX4owxtT_Fp9Gj6nkC_hMBPNO3HdqIF6O_3QPwR3WfoVSSJLwmQEw75uQ6JdujA-EudvJlpzN6jg4EM1wprJCW8dCmjreilOTpikBsngWa0f144Z-dV64CDrPfozs3dWC_nm92mE0YU9bzWiXiQeQCUy5GFRRIXH5iRTAw7EJNgfzr3q_PM3V88lzY2Us82YHIpUla7rBND6dNly5TumdDJ20HMnW_ikMDfXybb3CcxI5J1PgMcvv8EPvRQnTwQikOxdYQoF-Y", "state"=>"5c34cac73425d2732b29c187cae213b9d5a94fddab801787", "provider"=>"facebook"}
+  [1m[36mAuthorization Load (0.4ms)[0m  [1mSELECT "authorizations".* FROM "authorizations" WHERE "authorizations"."provider" = 'facebook' AND "authorizations"."uid" = '10152782585244692' LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered text template (0.0ms)
+Completed 200 OK in 78.0ms (Views: 0.9ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-11 16:43:33 +0530
+Processing by NewestController#index as HTML
+  Rendered layouts/_header.html.erb (24.3ms)
+  [1m[36mAdmin::News Load (0.4ms)[0m  [1mSELECT "admin_news".* FROM "admin_news" LIMIT 5 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "admin_news" 
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered newest/index.html.erb within layouts/application (67.5ms)
+Completed 200 OK in 79.9ms (Views: 44.3ms | ActiveRecord: 25.4ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-05-11 16:43:34 +0530
+Served asset /bootstrap.min.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/navbar-fixed-top.css" for 127.0.0.1 at 2014-05-11 16:43:34 +0530
+Served asset /navbar-fixed-top.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-05-11 16:43:34 +0530
+Served asset /jquery.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-05-11 16:43:34 +0530
+Served asset /application.css - 304 Not Modified (23ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-11 16:43:34 +0530
+Served asset /bootstrap.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-11 16:43:34 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/fb-login.png" for 127.0.0.1 at 2014-05-11 16:43:34 +0530
+Served asset /fb-login.png - 304 Not Modified (6ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-05-11 16:43:43 +0530
+
+
+Started GET "/auth/facebook/callback?code=AQB0xmIkwEaRrR8WcgAcvLhFvugWUkL46ypDiGzY7FQ3bZOSF6Hhgsoi7k-ehmOh3kmOBYYtvias4vNjtWXxKiSdBNuV3CfamLpIhjQU9PTYeuALC5cXPwQbZjI3AkZ5fxhWyMOXKZctcXFN9dUnFa00AUiGmPfWbh7Wn_RHQLsLQAKKlLHw-c4Yx6RMLBqvDhmmz6vJwxW_X8s_T_AKNyjiVHBKXoEzviF5MXWT0cI1LSWq3xt3X_4s76gBvHX9HC1FnoAecpK2b6XvS-7beLH1XNkdaev28xFRyz_jSV_G9pjnvR84bW71_Gv1UOHHJgE&state=bee52ea4f378124af21f0f9a2c5f8ea76eae524a48e12071" for 127.0.0.1 at 2014-05-11 16:43:44 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQB0xmIkwEaRrR8WcgAcvLhFvugWUkL46ypDiGzY7FQ3bZOSF6Hhgsoi7k-ehmOh3kmOBYYtvias4vNjtWXxKiSdBNuV3CfamLpIhjQU9PTYeuALC5cXPwQbZjI3AkZ5fxhWyMOXKZctcXFN9dUnFa00AUiGmPfWbh7Wn_RHQLsLQAKKlLHw-c4Yx6RMLBqvDhmmz6vJwxW_X8s_T_AKNyjiVHBKXoEzviF5MXWT0cI1LSWq3xt3X_4s76gBvHX9HC1FnoAecpK2b6XvS-7beLH1XNkdaev28xFRyz_jSV_G9pjnvR84bW71_Gv1UOHHJgE", "state"=>"bee52ea4f378124af21f0f9a2c5f8ea76eae524a48e12071", "provider"=>"facebook"}
+  [1m[36mAuthorization Load (0.3ms)[0m  [1mSELECT "authorizations".* FROM "authorizations" WHERE "authorizations"."provider" = 'facebook' AND "authorizations"."uid" = '10152782585244692' LIMIT 1[0m
+Redirected to 
+Completed 404 Not Found in 15.4ms
+
+ActionController::RoutingError (No route matches {:action=>"newest#index", :controller=>"sessions"}):
+  app/controllers/sessions_controller.rb:15:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-11 16:44:50 +0530
+Processing by NewestController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  [1m[35mAdmin::News Load (0.3ms)[0m  SELECT "admin_news".* FROM "admin_news" LIMIT 5 OFFSET 0
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "admin_news" [0m
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered newest/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 14.8ms (Views: 7.9ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-05-11 16:44:50 +0530
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/navbar-fixed-top.css" for 127.0.0.1 at 2014-05-11 16:44:50 +0530
+Served asset /navbar-fixed-top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-05-11 16:44:50 +0530
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-11 16:44:50 +0530
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-11 16:44:50 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-05-11 16:44:50 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fb-login.png" for 127.0.0.1 at 2014-05-11 16:44:50 +0530
+Served asset /fb-login.png - 304 Not Modified (0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-05-11 16:44:52 +0530
+
+
+Started GET "/auth/facebook/callback?code=AQAbAYD1JhnE2j0cjCj_aPticIxykMFUOPEdZ-EorkVoefm1VUpiTggrvgG3Aj1jYnZEbL9MmqqBW_cLSAoT6SNOaFaP8cBF97IO_sDFTO8ZVKNdU8ooCI4CZR0dP6Z6xGEFbzmfwm6-yr1njVCWub3O-kjp2LIT5mkCEFIgTFt-3fpFpqIk0flpQr3Ki4T3E6ZOfs9ktIS8BERxP2x2qRNyFVY2ubFGpKUH-yDiWNiTQItWoya8w68v6oCdh4f8W4Zm2JWwLTjJGUGOZJ31jxXIE2hEPKm-DKc6LvsKTJWKOwC3a5v7xRvXvnzH5na3sgE&state=b7e1d4b4104261a30feb46fdf50619716c12c7027b66e50c" for 127.0.0.1 at 2014-05-11 16:44:52 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQAbAYD1JhnE2j0cjCj_aPticIxykMFUOPEdZ-EorkVoefm1VUpiTggrvgG3Aj1jYnZEbL9MmqqBW_cLSAoT6SNOaFaP8cBF97IO_sDFTO8ZVKNdU8ooCI4CZR0dP6Z6xGEFbzmfwm6-yr1njVCWub3O-kjp2LIT5mkCEFIgTFt-3fpFpqIk0flpQr3Ki4T3E6ZOfs9ktIS8BERxP2x2qRNyFVY2ubFGpKUH-yDiWNiTQItWoya8w68v6oCdh4f8W4Zm2JWwLTjJGUGOZJ31jxXIE2hEPKm-DKc6LvsKTJWKOwC3a5v7xRvXvnzH5na3sgE", "state"=>"b7e1d4b4104261a30feb46fdf50619716c12c7027b66e50c", "provider"=>"facebook"}
+  [1m[35mAuthorization Load (0.4ms)[0m  SELECT "authorizations".* FROM "authorizations" WHERE "authorizations"."provider" = 'facebook' AND "authorizations"."uid" = '10152782585244692' LIMIT 1
+Redirected to 
+Completed 404 Not Found in 18.2ms
+
+ActionController::RoutingError (No route matches {:action=>"newest#index", :controller=>"sessions"}):
+  app/controllers/sessions_controller.rb:15:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-11 16:47:27 +0530
+Processing by NewestController#index as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+  [1m[36mAdmin::News Load (1.1ms)[0m  [1mSELECT "admin_news".* FROM "admin_news" LIMIT 5 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "admin_news" 
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered newest/index.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 29.4ms (Views: 13.8ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-05-11 16:47:28 +0530
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/navbar-fixed-top.css" for 127.0.0.1 at 2014-05-11 16:47:28 +0530
+Served asset /navbar-fixed-top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-05-11 16:47:28 +0530
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-05-11 16:47:28 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-11 16:47:28 +0530
+Served asset /bootstrap.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-11 16:47:28 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fb-login.png" for 127.0.0.1 at 2014-05-11 16:47:28 +0530
+Served asset /fb-login.png - 304 Not Modified (0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-05-11 16:47:31 +0530
+
+
+Started GET "/auth/facebook/callback?code=AQAz9Mc2M_PS_8n4KbLMh2YXnDyfue_pNm80MT1_jWHQwEfVBPyIpAs7sxxOKl7htu--cTKPUsB3mRaDf-E5F9Hm7a-TrmnAxvBzc3QKn1juVDVtCbd2549hf7f7P1aEKe4l_nq7UcriZuVEm1MqclzAn0Zlc30IFNGec-yqRR_36sC9nkRqam-sYi6ynFuDE50-f0KvYY5AF6EouZ3hei0EELfrXBhPirzlYFVLrPgbqoPKA2vqbYNJANWxrpX70gC-bwHSBcPHGG_yE7oHhfr-g3fWN5bj6TZJTxt6Ia_zA8ltxCJxjSlYFff-q4BU9VI&state=41109f222b950bc7dd908ba16881e1314dbdcde938ab07d1" for 127.0.0.1 at 2014-05-11 16:47:32 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQAz9Mc2M_PS_8n4KbLMh2YXnDyfue_pNm80MT1_jWHQwEfVBPyIpAs7sxxOKl7htu--cTKPUsB3mRaDf-E5F9Hm7a-TrmnAxvBzc3QKn1juVDVtCbd2549hf7f7P1aEKe4l_nq7UcriZuVEm1MqclzAn0Zlc30IFNGec-yqRR_36sC9nkRqam-sYi6ynFuDE50-f0KvYY5AF6EouZ3hei0EELfrXBhPirzlYFVLrPgbqoPKA2vqbYNJANWxrpX70gC-bwHSBcPHGG_yE7oHhfr-g3fWN5bj6TZJTxt6Ia_zA8ltxCJxjSlYFff-q4BU9VI", "state"=>"41109f222b950bc7dd908ba16881e1314dbdcde938ab07d1", "provider"=>"facebook"}
+  [1m[36mAuthorization Load (0.5ms)[0m  [1mSELECT "authorizations".* FROM "authorizations" WHERE "authorizations"."provider" = 'facebook' AND "authorizations"."uid" = '10152782585244692' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 17.9ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-11 16:47:35 +0530
+Processing by NewestController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  [1m[35mAdmin::News Load (0.4ms)[0m  SELECT "admin_news".* FROM "admin_news" LIMIT 5 OFFSET 0
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "admin_news" [0m
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered newest/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 8.5ms (Views: 5.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-05-11 16:47:35 +0530
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/navbar-fixed-top.css" for 127.0.0.1 at 2014-05-11 16:47:35 +0530
+Served asset /navbar-fixed-top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-05-11 16:47:35 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-05-11 16:47:35 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-11 16:47:35 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-11 16:47:35 +0530
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fb-login.png" for 127.0.0.1 at 2014-05-11 16:47:35 +0530
+Served asset /fb-login.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-11 16:49:34 +0530
+Processing by NewestController#index as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+  [1m[35mAdmin::News Load (2.3ms)[0m  SELECT "admin_news".* FROM "admin_news" LIMIT 5 OFFSET 0
+  [1m[36m (2.2ms)[0m  [1mSELECT COUNT(*) FROM "admin_news" [0m
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered newest/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 24.5ms (Views: 14.5ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-05-11 16:49:34 +0530
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/navbar-fixed-top.css" for 127.0.0.1 at 2014-05-11 16:49:34 +0530
+Served asset /navbar-fixed-top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-05-11 16:49:34 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-05-11 16:49:34 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-11 16:49:34 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-11 16:49:34 +0530
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fb-login.png" for 127.0.0.1 at 2014-05-11 16:49:34 +0530
+Served asset /fb-login.png - 304 Not Modified (0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-05-11 16:49:45 +0530
+
+
+Started GET "/auth/facebook/callback?code=AQDCr1d1AaJdgU71qTiknJGxyKBOF4HrXu9fvqrma8IZunvsrPOJhhNY8JpzvIxkHsHAEL7L1_SrmGuDvSNuhaC2jgKCMh4KOEyQlJZ3s5JsEHTGy44jMdxczNUihu25YSirt_QzkclBKVDB05ZKvusxUqiEH-TbTHiMj9-jFcS5m9ynEzBtYsgBJU3t1Bw0HSKsNdtin8SnS7VXSNZw82zD0YbGyDE373atXbGv_12ctxPNDOku80JorknSs0PfEFqWJ13Cak1dCjphmIEgFrfHOJpUuoZkZ6CAuK0whnv93xEij68FitSyhsICuM5B1v4&state=d5e7bd5968d162b4aec13a8b18bc6091bafbcaeffff8c7f1" for 127.0.0.1 at 2014-05-11 16:49:57 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQDCr1d1AaJdgU71qTiknJGxyKBOF4HrXu9fvqrma8IZunvsrPOJhhNY8JpzvIxkHsHAEL7L1_SrmGuDvSNuhaC2jgKCMh4KOEyQlJZ3s5JsEHTGy44jMdxczNUihu25YSirt_QzkclBKVDB05ZKvusxUqiEH-TbTHiMj9-jFcS5m9ynEzBtYsgBJU3t1Bw0HSKsNdtin8SnS7VXSNZw82zD0YbGyDE373atXbGv_12ctxPNDOku80JorknSs0PfEFqWJ13Cak1dCjphmIEgFrfHOJpUuoZkZ6CAuK0whnv93xEij68FitSyhsICuM5B1v4", "state"=>"d5e7bd5968d162b4aec13a8b18bc6091bafbcaeffff8c7f1", "provider"=>"facebook"}
+  [1m[35mAuthorization Load (3.4ms)[0m  SELECT "authorizations".* FROM "authorizations" WHERE "authorizations"."provider" = 'facebook' AND "authorizations"."uid" = '10152782585244692' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 6.9ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-11 16:49:59 +0530
+Processing by NewestController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  [1m[36mAdmin::News Load (0.4ms)[0m  [1mSELECT "admin_news".* FROM "admin_news" LIMIT 5 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "admin_news" 
+  Rendered layouts/_footer.html.erb (0.1ms)
+  Rendered newest/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 10.0ms (Views: 8.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-05-11 16:49:59 +0530
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/navbar-fixed-top.css" for 127.0.0.1 at 2014-05-11 16:49:59 +0530
+Served asset /navbar-fixed-top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-05-11 16:49:59 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-05-11 16:49:59 +0530
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-11 16:49:59 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-11 16:49:59 +0530
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fb-login.png" for 127.0.0.1 at 2014-05-11 16:49:59 +0530
+Served asset /fb-login.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-11 16:54:21 +0530
+Processing by NewestController#index as HTML
+  Rendered layouts/_header.html.erb (46.6ms)
+  Rendered newest/index.html.erb within layouts/application (47.2ms)
+Completed 500 Internal Server Error in 53.4ms
+
+ActionView::Template::Error (undefined method `empty?' for nil:NilClass):
+    18:           <li><a href="#">Submit</a></li>
+    19:         </ul> 
+    20:         <ul class="nav navbar-nav navbar-right">
+    21:           <li><% if !session[:name].empty? %><a href="/auth/facebook" style="height: 50px; padding-top: 0px;"><img src="/assets/fb-login.png" /></a><% else  %>Welcome <%= session[:name] %><% end  %></li>
+    22:         </ul>
+    23:       </div>
+    24:     </div>
+  app/views/layouts/_header.html.erb:21:in `_app_views_layouts__header_html_erb___18218059__629722678'
+  app/views/newest/index.html.erb:1:in `_app_views_newest_index_html_erb__49579637__623697078'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-11 16:54:35 +0530
+Processing by NewestController#index as HTML
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered newest/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 2.4ms
+
+ActionView::Template::Error (undefined method `empty?' for nil:NilClass):
+    18:           <li><a href="#">Submit</a></li>
+    19:         </ul> 
+    20:         <ul class="nav navbar-nav navbar-right">
+    21:           <li><% if !session[:name].empty? %><a href="/auth/facebook" style="height: 50px; padding-top: 0px;"><img src="/assets/fb-login.png" /></a><% else  %>Welcome <%= session[:name] %><% end  %></li>
+    22:         </ul>
+    23:       </div>
+    24:     </div>
+  app/views/layouts/_header.html.erb:21:in `_app_views_layouts__header_html_erb___18218059__629722678'
+  app/views/newest/index.html.erb:1:in `_app_views_newest_index_html_erb__49579637__623697078'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-11 16:57:41 +0530
+Processing by NewestController#index as HTML
+  Rendered layouts/_header.html.erb (0.5ms)
+  [1m[36mAdmin::News Load (0.8ms)[0m  [1mSELECT "admin_news".* FROM "admin_news" LIMIT 5 OFFSET 0[0m
+  [1m[35m (3.5ms)[0m  SELECT COUNT(*) FROM "admin_news" 
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered newest/index.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 18.0ms (Views: 6.0ms | ActiveRecord: 11.6ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-05-11 16:57:41 +0530
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/navbar-fixed-top.css" for 127.0.0.1 at 2014-05-11 16:57:41 +0530
+Served asset /navbar-fixed-top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-05-11 16:57:41 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-05-11 16:57:41 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-11 16:57:41 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-11 16:57:41 +0530
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-11 16:58:19 +0530
+Processing by NewestController#index as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  [1m[36mAdmin::News Load (2.6ms)[0m  [1mSELECT "admin_news".* FROM "admin_news" LIMIT 5 OFFSET 0[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "admin_news" 
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered newest/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 15.4ms (Views: 12.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-05-11 16:58:20 +0530
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/navbar-fixed-top.css" for 127.0.0.1 at 2014-05-11 16:58:20 +0530
+Served asset /navbar-fixed-top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-05-11 16:58:20 +0530
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-05-11 16:58:20 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-11 16:58:20 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-11 16:58:21 +0530
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-11 16:59:24 +0530
+Processing by NewestController#index as HTML
+  Rendered layouts/_header.html.erb (0.6ms)
+  [1m[36mAdmin::News Load (1.0ms)[0m  [1mSELECT "admin_news".* FROM "admin_news" LIMIT 5 OFFSET 0[0m
+  [1m[35m (2.2ms)[0m  SELECT COUNT(*) FROM "admin_news" 
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered newest/index.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 18.9ms (Views: 15.3ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-05-11 16:59:24 +0530
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/navbar-fixed-top.css" for 127.0.0.1 at 2014-05-11 16:59:24 +0530
+Served asset /navbar-fixed-top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-05-11 16:59:24 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-11 16:59:24 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-05-11 16:59:24 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-11 16:59:24 +0530
+Served asset /bootstrap.min.js - 304 Not Modified (3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-11 16:59:27 +0530
+Processing by NewestController#index as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+  [1m[36mAdmin::News Load (1.8ms)[0m  [1mSELECT "admin_news".* FROM "admin_news" LIMIT 5 OFFSET 0[0m
+  [1m[35m (3.4ms)[0m  SELECT COUNT(*) FROM "admin_news" 
+  Rendered layouts/_footer.html.erb (0.1ms)
+  Rendered newest/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 21.0ms (Views: 15.3ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-05-11 16:59:27 +0530
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/navbar-fixed-top.css" for 127.0.0.1 at 2014-05-11 16:59:27 +0530
+Served asset /navbar-fixed-top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-05-11 16:59:27 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-05-11 16:59:27 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-11 16:59:27 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-11 16:59:28 +0530
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-11 17:01:48 +0530
+Processing by NewestController#index as HTML
+  Rendered layouts/_header.html.erb (0.6ms)
+  [1m[36mAdmin::News Load (0.4ms)[0m  [1mSELECT "admin_news".* FROM "admin_news" LIMIT 5 OFFSET 0[0m
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM "admin_news" 
+  Rendered layouts/_footer.html.erb (0.1ms)
+  Rendered newest/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 17.0ms (Views: 8.5ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-05-11 17:01:49 +0530
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/navbar-fixed-top.css" for 127.0.0.1 at 2014-05-11 17:01:49 +0530
+Served asset /navbar-fixed-top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-05-11 17:01:49 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-05-11 17:01:49 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-11 17:01:49 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-11 17:01:49 +0530
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fb-login.png" for 127.0.0.1 at 2014-05-11 17:01:49 +0530
+Served asset /fb-login.png - 304 Not Modified (0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-05-11 17:01:53 +0530
+
+
+Started GET "/auth/facebook/callback?code=AQDUhOb8tWvUXjWVJ8NRxRHLSCIhdLC-udr9jJtXHTKZB7x7ERiHwNPywaTAa5hgdKaUs7s2At0gwUO14nY8sc-oT9J3gRtR98KGZfbQmwWuCRj-ffE0Ly77YZc5LMt15p3Hq-hXSCLCfyh1gztwsjTJ5xknfSQt_zzWPGH8fp_auvTmvD4cHla2xoKbXkcxyw-aUXROCjtwCPV0pB06qA5hvwjJv68XR7doEQtVBQvbVgFcMKgCyun898Lxj0PpoGc3j7oCabNzmZIpiY6OJwKUbPiYI9G93VLZ2-oHP0bvSvfj-QU9gdMKyIi9GSiMyeY&state=1dfca9cc93f7ebd728807b1105cbcd5778ba4890e2779c7f" for 127.0.0.1 at 2014-05-11 17:01:54 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQDUhOb8tWvUXjWVJ8NRxRHLSCIhdLC-udr9jJtXHTKZB7x7ERiHwNPywaTAa5hgdKaUs7s2At0gwUO14nY8sc-oT9J3gRtR98KGZfbQmwWuCRj-ffE0Ly77YZc5LMt15p3Hq-hXSCLCfyh1gztwsjTJ5xknfSQt_zzWPGH8fp_auvTmvD4cHla2xoKbXkcxyw-aUXROCjtwCPV0pB06qA5hvwjJv68XR7doEQtVBQvbVgFcMKgCyun898Lxj0PpoGc3j7oCabNzmZIpiY6OJwKUbPiYI9G93VLZ2-oHP0bvSvfj-QU9gdMKyIi9GSiMyeY", "state"=>"1dfca9cc93f7ebd728807b1105cbcd5778ba4890e2779c7f", "provider"=>"facebook"}
+  [1m[36mAuthorization Load (0.1ms)[0m  [1mSELECT "authorizations".* FROM "authorizations" WHERE "authorizations"."provider" = 'facebook' AND "authorizations"."uid" = '10152782585244692' LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 35.2ms (ActiveRecord: 5.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-11 17:01:57 +0530
+Processing by NewestController#index as HTML
+  Rendered layouts/_header.html.erb (2.2ms)
+  [1m[36mAdmin::News Load (0.4ms)[0m  [1mSELECT "admin_news".* FROM "admin_news" LIMIT 5 OFFSET 0[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "admin_news" 
+  Rendered layouts/_footer.html.erb (0.1ms)
+  Rendered newest/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 10.1ms (Views: 9.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-05-11 17:01:57 +0530
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/navbar-fixed-top.css" for 127.0.0.1 at 2014-05-11 17:01:57 +0530
+Served asset /navbar-fixed-top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-05-11 17:01:57 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-05-11 17:01:57 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-11 17:01:57 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-11 17:01:57 +0530
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/newest/index" for 127.0.0.1 at 2014-05-11 17:02:12 +0530
+Processing by NewestController#index as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+  [1m[36mAdmin::News Load (3.1ms)[0m  [1mSELECT "admin_news".* FROM "admin_news" LIMIT 5 OFFSET 0[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "admin_news" 
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered newest/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 13.7ms (Views: 10.1ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-05-11 17:02:12 +0530
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/navbar-fixed-top.css" for 127.0.0.1 at 2014-05-11 17:02:12 +0530
+Served asset /navbar-fixed-top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-05-11 17:02:12 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-05-11 17:02:12 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-11 17:02:12 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-11 17:02:12 +0530
+Served asset /bootstrap.min.js - 304 Not Modified (5ms)
+
+
+Started GET "/newest/index" for 127.0.0.1 at 2014-05-11 17:02:17 +0530
+Processing by NewestController#index as HTML
+  Rendered layouts/_header.html.erb (0.2ms)
+  [1m[36mAdmin::News Load (3.2ms)[0m  [1mSELECT "admin_news".* FROM "admin_news" LIMIT 5 OFFSET 0[0m
+  [1m[35m (4.5ms)[0m  SELECT COUNT(*) FROM "admin_news" 
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered newest/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 17.7ms (Views: 9.3ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-05-11 17:02:18 +0530
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/navbar-fixed-top.css" for 127.0.0.1 at 2014-05-11 17:02:18 +0530
+Served asset /navbar-fixed-top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-05-11 17:02:18 +0530
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-05-11 17:02:18 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-11 17:02:18 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-11 17:02:18 +0530
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin/news" for 127.0.0.1 at 2014-05-11 17:02:40 +0530
+Processing by Admin::NewsController#index as HTML
+Filter chain halted as #<Proc:0xb574722c@/var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_controller/metal/http_authentication.rb:112> rendered or redirected
+Completed 401 Unauthorized in 0.6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/news" for 127.0.0.1 at 2014-05-11 17:02:46 +0530
+Processing by Admin::NewsController#index as HTML
+  Rendered layouts/_admin_header.html.erb (0.4ms)
+  Rendered layouts/_admin_left_panel.html.erb (0.6ms)
+  [1m[36m (6.3ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "admin_news" LIMIT 5 OFFSET 0) subquery_for_count [0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "admin_news" 
+  Rendered layouts/_admin_footer.html.erb (0.1ms)
+  Rendered admin/news/index.html.erb within layouts/backend_application (17.6ms)
+Completed 200 OK in 29.7ms (Views: 22.1ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-05-11 17:02:46 +0530
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/navbar-fixed-top.css" for 127.0.0.1 at 2014-05-11 17:02:46 +0530
+Served asset /navbar-fixed-top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/dashboard.css" for 127.0.0.1 at 2014-05-11 17:02:46 +0530
+Served asset /admin/dashboard.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-05-11 17:02:46 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-11 17:02:46 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-11 17:02:46 +0530
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin/news/new" for 127.0.0.1 at 2014-05-11 17:02:50 +0530
+Processing by Admin::NewsController#new as HTML
+  Rendered layouts/_admin_header.html.erb (0.0ms)
+  Rendered layouts/_admin_left_panel.html.erb (1.2ms)
+  Rendered admin/news/_form.html.erb (10.0ms)
+  Rendered layouts/_admin_footer.html.erb (0.0ms)
+  Rendered admin/news/new.html.erb within layouts/backend_application (14.5ms)
+Completed 200 OK in 54.1ms (Views: 38.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-05-11 17:02:50 +0530
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/navbar-fixed-top.css" for 127.0.0.1 at 2014-05-11 17:02:50 +0530
+Served asset /navbar-fixed-top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/dashboard.css" for 127.0.0.1 at 2014-05-11 17:02:50 +0530
+Served asset /admin/dashboard.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-05-11 17:02:50 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-11 17:02:50 +0530
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-11 17:02:50 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started POST "/admin/news" for 127.0.0.1 at 2014-05-11 17:03:29 +0530
+Processing by Admin::NewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gEsQh/YrVN7ol6yXKumkFJ6o+HwgYPdjsrpDg4DQlh4=", "admin_news"=>{"title"=>"How The New Base CRM Mobile Apps Expose Market Leader Weaknesses", "link"=>"http://techcrunch.com/2012/10/04/how-the-new-base-crm-mobile-apps-expose-market-leader-weaknesses/", "description"=>"", "published"=>"1"}, "commit"=>""}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "admin_news" ("created_at", "description", "link", "published", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Sun, 11 May 2014 11:33:29 UTC +00:00], ["description", ""], ["link", "http://techcrunch.com/2012/10/04/how-the-new-base-crm-mobile-apps-expose-market-leader-weaknesses/"], ["published", true], ["title", "How The New Base CRM Mobile Apps Expose Market Leader Weaknesses"], ["updated_at", Sun, 11 May 2014 11:33:29 UTC +00:00]]
+  [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/admin/news/1
+Completed 302 Found in 77.7ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/admin/news/1" for 127.0.0.1 at 2014-05-11 17:03:29 +0530
+Processing by Admin::NewsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAdmin::News Load (1.4ms)[0m  SELECT "admin_news".* FROM "admin_news" WHERE "admin_news"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered layouts/_admin_header.html.erb (0.0ms)
+  Rendered layouts/_admin_left_panel.html.erb (0.3ms)
+  Rendered layouts/_admin_footer.html.erb (0.0ms)
+  Rendered admin/news/show.html.erb within layouts/backend_application (19.0ms)
+Completed 200 OK in 35.9ms (Views: 21.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-05-11 17:03:29 +0530
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/navbar-fixed-top.css" for 127.0.0.1 at 2014-05-11 17:03:29 +0530
+Served asset /navbar-fixed-top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/dashboard.css" for 127.0.0.1 at 2014-05-11 17:03:29 +0530
+Served asset /admin/dashboard.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-05-11 17:03:29 +0530
+Served asset /jquery.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-11 17:03:29 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-11 17:03:29 +0530
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin/news" for 127.0.0.1 at 2014-05-11 17:03:31 +0530
+Processing by Admin::NewsController#index as HTML
+  Rendered layouts/_admin_header.html.erb (0.0ms)
+  Rendered layouts/_admin_left_panel.html.erb (2.7ms)
+  [1m[36m (2.2ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "admin_news" LIMIT 5 OFFSET 0) subquery_for_count [0m
+  [1m[35mAdmin::News Load (1.1ms)[0m  SELECT "admin_news".* FROM "admin_news" LIMIT 5 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "admin_news" [0m
+  Rendered layouts/_admin_footer.html.erb (0.0ms)
+  Rendered admin/news/index.html.erb within layouts/backend_application (13.5ms)
+Completed 200 OK in 19.0ms (Views: 14.9ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-05-11 17:03:32 +0530
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/navbar-fixed-top.css" for 127.0.0.1 at 2014-05-11 17:03:32 +0530
+Served asset /navbar-fixed-top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/dashboard.css" for 127.0.0.1 at 2014-05-11 17:03:32 +0530
+Served asset /admin/dashboard.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-05-11 17:03:32 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-11 17:03:32 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-11 17:03:32 +0530
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-11 17:03:38 +0530
+Processing by NewestController#index as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+  [1m[35mAdmin::News Load (0.6ms)[0m  SELECT "admin_news".* FROM "admin_news" LIMIT 5 OFFSET 0
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "admin_news" [0m
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered newest/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 10.6ms (Views: 9.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-05-11 17:03:38 +0530
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/navbar-fixed-top.css" for 127.0.0.1 at 2014-05-11 17:03:38 +0530
+Served asset /navbar-fixed-top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-05-11 17:03:38 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-05-11 17:03:38 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-11 17:03:38 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-11 17:03:38 +0530
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
