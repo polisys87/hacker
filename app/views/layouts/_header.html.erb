@@ -18,7 +18,7 @@
           <li><a href="#">Submit</a></li>
         </ul> 
         <ul class="nav navbar-nav navbar-right">
-          <li><% if session[:user_name].blank? %><a href="/auth/facebook" style="height: 50px; padding-top: 0px;"><img src="/assets/fb-login.png" /></a><% else  %>Welcome <%= session[:user_name] %><% end  %></li>
+          <li><% if session[:user_name].blank? %><a href="/auth/facebook" style="height: 50px; padding-top: 0px;"><img src="/assets/fb-login.png" /></a><% else  %><%= session[:user_name] %><br/><div class="logout"><a href="/logout">Logout</a></div><% end  %></li>
         </ul>
       </div>
     </div>

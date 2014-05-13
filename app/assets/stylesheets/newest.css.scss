@@ -22,3 +22,11 @@ ul.newslist h3 a:hover, ul.newslist h3 a:focus {
     background: none;
     color: #2a6496;
 }
+
+.logout {
+    float: right;
+}
+
+.logout a, .logout a:hover {
+    padding: 0; text-decoration: none; background: none; color: #000000;
+}

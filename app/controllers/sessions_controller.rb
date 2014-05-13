@@ -29,7 +29,8 @@ class SessionsController < ApplicationController
   end
   
   def destroy
-    session[:user_id] = nil
-    render :text => "You've logged out!"
+    session[:user_name] = nil
+#    render :text => "You've logged out!"
+    redirect_to :controller => "newest", :action => "index"
   end
 end
