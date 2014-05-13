@@ -17127,3 +17127,287 @@ Served asset /jquery_ujs.js - 304 Not Modified (0ms)
 
 Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-11 17:03:38 +0530
 Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:12:38 +0530
+Connecting to database specified by database.yml
+Processing by NewestController#index as HTML
+  Rendered layouts/_header.html.erb (0.7ms)
+  [1m[36mAdmin::News Load (11.0ms)[0m  [1mSELECT "admin_news".* FROM "admin_news" WHERE (published = true) LIMIT 5 OFFSET 0[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "admin_news" WHERE (published = true)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered newest/index.html.erb within layouts/application (530.1ms)
+Completed 200 OK in 768.4ms (Views: 248.3ms | ActiveRecord: 423.0ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-05-13 22:12:41 +0530
+Served asset /bootstrap.min.css - 200 OK (56ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-13 22:12:41 +0530
+Served asset /bootstrap.min.js - 200 OK (22ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-13 22:12:41 +0530
+Served asset /jquery_ujs.js - 200 OK (71ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-05-13 22:12:41 +0530
+Served asset /jquery.js - 200 OK (74ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-05-13 22:12:41 +0530
+Served asset /application.css - 200 OK (228ms)
+
+
+Started GET "/assets/navbar-fixed-top.css" for 127.0.0.1 at 2014-05-13 22:12:41 +0530
+Served asset /navbar-fixed-top.css - 200 OK (16ms)
+
+
+Started GET "/assets/fb-login.png" for 127.0.0.1 at 2014-05-13 22:12:41 +0530
+Served asset /fb-login.png - 200 OK (8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:12:50 +0530
+Processing by NewestController#index as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+  [1m[36mAdmin::News Load (4.3ms)[0m  [1mSELECT "admin_news".* FROM "admin_news" WHERE (published = true) LIMIT 5 OFFSET 0[0m
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM "admin_news" WHERE (published = true)
+  Rendered layouts/_footer.html.erb (0.1ms)
+  Rendered newest/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 23.1ms (Views: 12.7ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/admin/news" for 127.0.0.1 at 2014-05-13 22:12:56 +0530
+Processing by Admin::NewsController#index as HTML
+Filter chain halted as #<Proc:0xb60022f4@/var/lib/gems/1.9.1/gems/actionpack-3.2.17/lib/action_controller/metal/http_authentication.rb:112> rendered or redirected
+Completed 401 Unauthorized in 0.5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/news" for 127.0.0.1 at 2014-05-13 22:12:59 +0530
+Processing by Admin::NewsController#index as HTML
+  Rendered layouts/_admin_header.html.erb (0.4ms)
+  Rendered layouts/_admin_left_panel.html.erb (0.8ms)
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "admin_news" LIMIT 5 OFFSET 0) subquery_for_count [0m
+  [1m[35mAdmin::News Load (0.3ms)[0m  SELECT "admin_news".* FROM "admin_news" LIMIT 5 OFFSET 0
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "admin_news" [0m
+  Rendered layouts/_admin_footer.html.erb (0.4ms)
+  Rendered admin/news/index.html.erb within layouts/backend_application (31.0ms)
+Completed 200 OK in 69.5ms (Views: 67.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/admin/dashboard.css" for 127.0.0.1 at 2014-05-13 22:12:59 +0530
+Served asset /admin/dashboard.css - 200 OK (48ms)
+
+
+Started GET "/admin/news/new" for 127.0.0.1 at 2014-05-13 22:13:03 +0530
+Processing by Admin::NewsController#new as HTML
+  Rendered layouts/_admin_header.html.erb (0.0ms)
+  Rendered layouts/_admin_left_panel.html.erb (0.4ms)
+  Rendered admin/news/_form.html.erb (105.3ms)
+  Rendered layouts/_admin_footer.html.erb (0.0ms)
+  Rendered admin/news/new.html.erb within layouts/backend_application (137.7ms)
+Completed 200 OK in 151.4ms (Views: 150.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/news" for 127.0.0.1 at 2014-05-13 22:13:15 +0530
+Processing by Admin::NewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"frdkcFvInEyFPCMcIniYmU45kHoj/BOI2qJ6VwSJKos=", "admin_news"=>{"title"=>"my news", "link"=>"http://polisys.com", "description"=>"", "published"=>"0"}, "commit"=>""}
+  [1m[35m (9.3ms)[0m  BEGIN
+  [1m[36mSQL (151.3ms)[0m  [1mINSERT INTO "admin_news" ("created_at", "description", "link", "published", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Tue, 13 May 2014 16:43:15 UTC +00:00], ["description", ""], ["link", "http://polisys.com"], ["published", false], ["title", "my news"], ["updated_at", Tue, 13 May 2014 16:43:15 UTC +00:00]]
+  [1m[35m (64.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/admin/news/2
+Completed 302 Found in 229.9ms (ActiveRecord: 225.3ms)
+
+
+Started GET "/admin/news/2" for 127.0.0.1 at 2014-05-13 22:13:15 +0530
+Processing by Admin::NewsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdmin::News Load (2.3ms)[0m  [1mSELECT "admin_news".* FROM "admin_news" WHERE "admin_news"."id" = $1 LIMIT 1[0m  [["id", "2"]]
+  Rendered layouts/_admin_header.html.erb (0.0ms)
+  Rendered layouts/_admin_left_panel.html.erb (0.2ms)
+  Rendered layouts/_admin_footer.html.erb (0.0ms)
+  Rendered admin/news/show.html.erb within layouts/backend_application (3.1ms)
+Completed 200 OK in 31.4ms (Views: 27.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:13:18 +0530
+Processing by NewestController#index as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+  [1m[35mAdmin::News Load (3.7ms)[0m  SELECT "admin_news".* FROM "admin_news" WHERE (published = true) LIMIT 5 OFFSET 0
+  [1m[36m (2.5ms)[0m  [1mSELECT COUNT(*) FROM "admin_news" WHERE (published = true)[0m
+  Rendered layouts/_footer.html.erb (3.4ms)
+  Rendered newest/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 17.7ms (Views: 11.1ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-05-13 22:13:19 +0530
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/navbar-fixed-top.css" for 127.0.0.1 at 2014-05-13 22:13:19 +0530
+Served asset /navbar-fixed-top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-05-13 22:13:19 +0530
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-05-13 22:13:19 +0530
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-13 22:13:19 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-13 22:13:19 +0530
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fb-login.png" for 127.0.0.1 at 2014-05-13 22:13:19 +0530
+Served asset /fb-login.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin/news/2/edit" for 127.0.0.1 at 2014-05-13 22:13:22 +0530
+Processing by Admin::NewsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAdmin::News Load (0.7ms)[0m  SELECT "admin_news".* FROM "admin_news" WHERE "admin_news"."id" = $1 LIMIT 1  [["id", "2"]]
+  Rendered layouts/_admin_header.html.erb (0.1ms)
+  Rendered layouts/_admin_left_panel.html.erb (8.5ms)
+  Rendered admin/news/_form.html.erb (10.7ms)
+  Rendered layouts/_admin_footer.html.erb (0.0ms)
+  Rendered admin/news/edit.html.erb within layouts/backend_application (23.0ms)
+Completed 200 OK in 38.9ms (Views: 30.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-05-13 22:13:22 +0530
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/navbar-fixed-top.css" for 127.0.0.1 at 2014-05-13 22:13:22 +0530
+Served asset /navbar-fixed-top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-13 22:13:22 +0530
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-13 22:13:22 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-05-13 22:13:22 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started PUT "/admin/news/2" for 127.0.0.1 at 2014-05-13 22:13:24 +0530
+Processing by Admin::NewsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"frdkcFvInEyFPCMcIniYmU45kHoj/BOI2qJ6VwSJKos=", "admin_news"=>{"title"=>"my news", "link"=>"http://polisys.com", "description"=>"", "published"=>"1"}, "commit"=>"", "id"=>"2"}
+  [1m[36mAdmin::News Load (0.5ms)[0m  [1mSELECT "admin_news".* FROM "admin_news" WHERE "admin_news"."id" = $1 LIMIT 1[0m  [["id", "2"]]
+  [1m[35m (2.3ms)[0m  BEGIN
+  [1m[36m (5.6ms)[0m  [1mUPDATE "admin_news" SET "published" = 't', "updated_at" = '2014-05-13 16:43:24.485934' WHERE "admin_news"."id" = 2[0m
+  [1m[35m (30.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/admin/news/2
+Completed 302 Found in 48.4ms (ActiveRecord: 39.0ms)
+
+
+Started GET "/admin/news/2" for 127.0.0.1 at 2014-05-13 22:13:24 +0530
+Processing by Admin::NewsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdmin::News Load (3.6ms)[0m  [1mSELECT "admin_news".* FROM "admin_news" WHERE "admin_news"."id" = $1 LIMIT 1[0m  [["id", "2"]]
+  Rendered layouts/_admin_header.html.erb (0.1ms)
+  Rendered layouts/_admin_left_panel.html.erb (0.2ms)
+  Rendered layouts/_admin_footer.html.erb (0.0ms)
+  Rendered admin/news/show.html.erb within layouts/backend_application (2.5ms)
+Completed 200 OK in 8.5ms (Views: 3.7ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-05-13 22:13:24 +0530
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/navbar-fixed-top.css" for 127.0.0.1 at 2014-05-13 22:13:24 +0530
+Served asset /navbar-fixed-top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-13 22:13:24 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-05-13 22:13:24 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-13 22:13:24 +0530
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:13:26 +0530
+Processing by NewestController#index as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+  [1m[35mAdmin::News Load (1.7ms)[0m  SELECT "admin_news".* FROM "admin_news" WHERE (published = true) LIMIT 5 OFFSET 0
+  [1m[36m (3.8ms)[0m  [1mSELECT COUNT(*) FROM "admin_news" WHERE (published = true)[0m
+  Rendered layouts/_footer.html.erb (4.0ms)
+  Rendered newest/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 18.3ms (Views: 12.4ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-05-13 22:13:26 +0530
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-05-13 22:13:26 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/navbar-fixed-top.css" for 127.0.0.1 at 2014-05-13 22:13:26 +0530
+Served asset /navbar-fixed-top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-05-13 22:13:26 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-13 22:13:26 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-13 22:13:26 +0530
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fb-login.png" for 127.0.0.1 at 2014-05-13 22:13:26 +0530
+Served asset /fb-login.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin/news/2/edit" for 127.0.0.1 at 2014-05-13 22:13:30 +0530
+Processing by Admin::NewsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAdmin::News Load (3.2ms)[0m  SELECT "admin_news".* FROM "admin_news" WHERE "admin_news"."id" = $1 LIMIT 1  [["id", "2"]]
+  Rendered layouts/_admin_header.html.erb (0.2ms)
+  Rendered layouts/_admin_left_panel.html.erb (0.4ms)
+  Rendered admin/news/_form.html.erb (3.9ms)
+  Rendered layouts/_admin_footer.html.erb (0.0ms)
+  Rendered admin/news/edit.html.erb within layouts/backend_application (38.2ms)
+Completed 200 OK in 43.9ms (Views: 39.8ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-05-13 22:13:30 +0530
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/navbar-fixed-top.css" for 127.0.0.1 at 2014-05-13 22:13:30 +0530
+Served asset /navbar-fixed-top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-05-13 22:13:30 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2014-05-13 22:13:30 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-05-13 22:13:30 +0530
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)

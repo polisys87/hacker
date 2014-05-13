@@ -1,5 +1,5 @@
 class NewestController < ApplicationController
   def index
-    @news = Admin::News.page params[:page]
+    @news = Admin::News.where("published = true").page params[:page]
   end
 end
